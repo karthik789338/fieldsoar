@@ -1,0 +1,25 @@
+{
+  "capacity_trace_created": false,
+  "command_parameters": {
+    "duration_s": 3.0,
+    "mac": "CSMA_CA",
+    "mobility": "GaussMarkov3D",
+    "nodes": 8,
+    "poll_ms": 50,
+    "raytrace_samples": 512,
+    "routing": "Greedy",
+    "seed": 27
+  },
+  "created_utc": "2026-10-22T03:55:36.061582+00:00",
+  "hostname": "g025.mgmt.hellbender",
+  "native_events_sha256": "95d21f5f49c1636679ff4fd30dc74e0d4e0a6c1c64cc89b64b9887124b132478",
+  "python": "3.12.15",
+  "scene_json_sha256": "e6e3f0182ae632d33f0a9b674a1e9d053702508000d362edd91e12680742bcda",
+  "scene_xml_sha256": "b39e51f773db97fdb70906ba4526ccffcb521623f55641fd2ab15adb5f711587",
+  "telemetry_script_sha256": "884d21d328aea00c550839809ab425c6c1a0f1f9152ff5bee01cdffdf97ff670",
+  "trajectories_sha256": "46adfd10354e2da5a4956e45ffbb624f01db65efe15dc4e5d6a6ff84a42ca1f9",
+  "uavnetsim_git": {
+    "commit": "c2703f24eb58cdb557a5f67ded5c7b0368a964ed",
+    "dirty": true
+  }
+}

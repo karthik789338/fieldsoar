@@ -1,0 +1,42 @@
+schema_version: 1
+protocol: independent_mobility_h3
+heldout:
+  seeds:
+  - 10701
+  - 10713
+  - 10731
+  - 10751
+  - 10763
+heldout_scenarios:
+- name: h3_unseen_seed41_nominal
+  onboard_slowdown: 12.25
+  network_scale: 1.5
+  network_trace_template: data/traces/uavnetsim_trajectory_analytical_uplink_{uavs}uav_3s_seed79.csv
+- name: h3_unseen_seed41_congested
+  onboard_slowdown: 21.25
+  network_scale: 1.25
+  network_trace_template: data/traces/uavnetsim_trajectory_analytical_uplink_{uavs}uav_3s_seed79.csv
+- name: h3_unseen_seed41_link_outage
+  onboard_slowdown: 17.25
+  network_scale: 1.85
+  network_trace_template: data/traces/uavnetsim_trajectory_analytical_uplink_{uavs}uav_3s_seed79.csv
+  outage_windows_s:
+  - - 0.8
+    - 1.1
+  - - 1.9
+    - 2.1
+- name: h3_unseen_seed41_edge_reduced
+  onboard_slowdown: 17.25
+  network_scale: 1.85
+  network_trace_template: data/traces/uavnetsim_trajectory_analytical_uplink_{uavs}uav_3s_seed79.csv
+  edge_slots: 1
+- name: h3_unseen_seed41_critical_burst
+  onboard_slowdown: 17.25
+  network_scale: 1.85
+  network_trace_template: data/traces/uavnetsim_trajectory_analytical_uplink_{uavs}uav_3s_seed79.csv
+  dataset_cycle:
+  - CWD30
+  - CWD30
+  - RumexWeeds
+  - LeafySpurge
+  burst_multiplier: 2

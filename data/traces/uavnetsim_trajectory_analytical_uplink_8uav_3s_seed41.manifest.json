@@ -1,0 +1,43 @@
+{
+  "assumptions": {
+    "carrier_frequency_ghz": 2.4,
+    "channel_bandwidth_mhz": 20.0,
+    "duration_s": 3.0,
+    "ground_station_m": [
+      250.0,
+      250.0,
+      10.0
+    ],
+    "interference_margin_db": 3.0,
+    "max_link_mbps": 100.0,
+    "n_uavs": 8,
+    "noise_figure_db": 7.0,
+    "path_loss_exponent": 2.7,
+    "protocol_efficiency": 0.5,
+    "rician_k": 8.0,
+    "seed": 27,
+    "shadow_ar1_rho": 0.95,
+    "shadow_sigma_db": 4.0,
+    "shared_bottleneck_mbps": 24.0,
+    "snr_disconnect_db": -5.0,
+    "tick_s": 0.1,
+    "tx_power_dbm": 20.0
+  },
+  "assumptions_sha256": "28e9a78dcfe816164f81fb7cb3f2760fcc22a03a8bc16252af9cdfd3a468b837",
+  "assumptions_yaml": "data/traces/radio_8uav_seed41.yaml",
+  "capture_manifest_path": "results/uavnetsim_native_telemetry_8uav_seed41/uavnetsim_capture_manifest.json",
+  "capture_manifest_sha256": "90112d01539f8a825b2870fae1c5eb96abe70f9b763025bdf6dc3a72f1932469",
+  "diagnostics_csv": "data/traces/uavnetsim_trajectory_analytical_uplink_8uav_3s_seed41.diagnostics.csv",
+  "diagnostics_sha256": "ac354d47f531fa7f67b0c61621302c7128d685c43975e4f1025b56711c0ba7ca",
+  "generated_trace_csv": "data/traces/uavnetsim_trajectory_analytical_uplink_8uav_3s_seed41.csv",
+  "generated_trace_sha256": "709cdd6a68b6235ec3ef73de49cb02b77034c83035e198ecc48e2a43c56493f1",
+  "generator_sha256": "af7d58ac793255c439106fbdfb8a38e89e2ff293d75644e80a1972f03360ca05",
+  "ground_edge_radio_modeled_in_uavnetsim": false,
+  "measurement_claim": "NONE: trajectories are from UavNetSim, radio rates are analytical assumptions, not measured Sionna/AERPAW capacity",
+  "note": "Research scaffolding. Do NOT report as calibrated UAV-to-edge radio performance.",
+  "provenance": "trajectory_driven_analytical_uncalibrated",
+  "schema_version": 1,
+  "source_trajectory_csv": "results/uavnetsim_native_telemetry_8uav_seed41/uavnetsim_uav_trajectories.csv",
+  "source_trajectory_sha256": "99d07cf3e0fbd83a753341272330a6451028c8c8142880d4b3c54d857bfe46b4",
+  "uavnetsim_commit": "c2703f24eb58cdb557a5f67ded5c7b0368a964ed"
+}

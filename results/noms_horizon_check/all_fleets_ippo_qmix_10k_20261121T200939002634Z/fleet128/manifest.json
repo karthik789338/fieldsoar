@@ -1,0 +1,142 @@
+{
+  "traces": {
+    "nominal": {
+      "trace_sha256": "f69260e07681c22ebce4cd15875f714577fb9c6de30e0723a822c77de7c7077b",
+      "generator_manifest_sha256": "ee57b6c113c5b4d927e3acf083d21b3bfa8980e5e635b54dadac4f75f86744a7",
+      "mobility_sha256": "eb1d3f7f3b37fb1fbfd6116bbc002879d8796ac791f6d05d264c6d00db8f8587",
+      "uavnetsim_commit": "c2703f24eb58cdb557a5f67ded5c7b0368a964ed",
+      "network_provenance": "trajectory_driven_analytical_uncalibrated"
+    },
+    "stress": {
+      "trace_sha256": "2073313328fb5f19beccdbc13f2eecdc532cc80b95a1bc0c56a146d55a7b0422",
+      "generator_manifest_sha256": "acb2dd6d3f8de063c2237afe2fd41067021e37ebbb319ba38e3f7b999ae277ca",
+      "mobility_sha256": "545dd628a1482e1f8c6143c1583be43e6b2349ad08456f2d6fec401cbe53a232",
+      "uavnetsim_commit": "c2703f24eb58cdb557a5f67ded5c7b0368a964ed",
+      "network_provenance": "trajectory_driven_analytical_uncalibrated"
+    }
+  },
+  "trace_paths": {
+    "nominal": "/mnt/pixstor/data/ka9d9/fieldvision/results/noms_horizon_check/mobility_cuda_20261120T050646Z/traces/seed27/radio_30s_seed27.csv",
+    "stress": "/mnt/pixstor/data/ka9d9/fieldvision/results/noms_horizon_check/mobility_cuda_20261120T050646Z/traces/seed41/radio_30s_seed41.csv"
+  },
+  "fleet_uavs": 128,
+  "base_sha256": "b82ff61109615687b6f08b324088ff615e701286598e2cc88cbf41a7e872c114",
+  "nominal_plan_sha256": "870593ee836b980c644ef20fff89f28d2c739b202d530adb7e462b2c797a9ad4",
+  "stress_plan_sha256": "01715bc3863baee62ad7f868426dffd526dcafc752f8563b9ceeb4ac8f869889",
+  "evaluation_script_sha256": "907f3dba5e1855867dfae0124e10b957862cec86d4aaac43477312f62e24682a",
+  "selections": {
+    "ippo": [
+      {
+        "training_seed": 11,
+        "checkpoint": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/ippo/training/episodes10000_epochs18_dropout00_lr0p00014801217_seed11/best_validation_checkpoint.pt",
+        "sha256": "ab65e90d775272e34f6add53a5493de6260a6d92b894cc01ff987f2897493bae",
+        "trial": {
+          "best_episode": 9100,
+          "best_validation_score": 0.5768258075811111,
+          "dropout": 0.0,
+          "episodes": 10000,
+          "learning_rate": 0.00014801217118222754,
+          "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/ippo/training/episodes10000_epochs18_dropout00_lr0p00014801217_seed11",
+          "ppo_epochs": 18,
+          "train_seed": 11,
+          "trial": "episodes10000_epochs18_dropout00_lr0p00014801217_seed11"
+        }
+      },
+      {
+        "training_seed": 23,
+        "checkpoint": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/ippo/training/episodes10000_epochs18_dropout00_lr0p00014801217_seed23/best_validation_checkpoint.pt",
+        "sha256": "e866727fbe92a2836a1216738a36c50d577cdf4ba0f1099b31eeb0ab932058c3",
+        "trial": {
+          "best_episode": 8550,
+          "best_validation_score": 0.5299503923622223,
+          "dropout": 0.0,
+          "episodes": 10000,
+          "learning_rate": 0.00014801217118222754,
+          "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/ippo/training/episodes10000_epochs18_dropout00_lr0p00014801217_seed23",
+          "ppo_epochs": 18,
+          "train_seed": 23,
+          "trial": "episodes10000_epochs18_dropout00_lr0p00014801217_seed23"
+        }
+      },
+      {
+        "training_seed": 37,
+        "checkpoint": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/ippo/training/episodes10000_epochs18_dropout00_lr0p00014801217_seed37/best_validation_checkpoint.pt",
+        "sha256": "d1e6b239c0441900b20b608a41716c24b793ccdaed8f36f77a7c11567c48caa0",
+        "trial": {
+          "best_episode": 9000,
+          "best_validation_score": 0.5273470295144445,
+          "dropout": 0.0,
+          "episodes": 10000,
+          "learning_rate": 0.00014801217118222754,
+          "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/ippo/training/episodes10000_epochs18_dropout00_lr0p00014801217_seed37",
+          "ppo_epochs": 18,
+          "train_seed": 37,
+          "trial": "episodes10000_epochs18_dropout00_lr0p00014801217_seed37"
+        }
+      }
+    ],
+    "qmix": [
+      {
+        "training_seed": 11,
+        "checkpoint": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed11/best_validation_checkpoint.pt",
+        "sha256": "eafce6a4af3b42f10d139c0ecdb8b679c0da86a8da8f245d55e6e9bc7a34e001",
+        "trial": {
+          "best_episode": 300,
+          "best_validation_score": 0.15755268373777778,
+          "dropout": 0.0,
+          "episodes": 10000,
+          "learning_rate": 0.00011043890911284906,
+          "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed11",
+          "ppo_epochs": 12,
+          "train_seed": 11,
+          "trial": "episodes10000_epochs12_dropout00_lr0p00011043891_seed11"
+        }
+      },
+      {
+        "training_seed": 23,
+        "checkpoint": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed23/best_validation_checkpoint.pt",
+        "sha256": "8ab2bf233fb1c3aac86bf894a720719527bc35f7ee9d7dc0cee7b3990b1c6136",
+        "trial": {
+          "best_episode": 300,
+          "best_validation_score": 0.15234448987222224,
+          "dropout": 0.0,
+          "episodes": 10000,
+          "learning_rate": 0.00011043890911284906,
+          "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed23",
+          "ppo_epochs": 12,
+          "train_seed": 23,
+          "trial": "episodes10000_epochs12_dropout00_lr0p00011043891_seed23"
+        }
+      },
+      {
+        "training_seed": 37,
+        "checkpoint": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed37/best_validation_checkpoint.pt",
+        "sha256": "53673dd7c2a33cd02153ff62ce6f2ce186af5296fd925cd118bb2f6c85f9e9bb",
+        "trial": {
+          "best_episode": 150,
+          "best_validation_score": 0.3281271556722222,
+          "dropout": 0.0,
+          "episodes": 10000,
+          "learning_rate": 0.00011043890911284906,
+          "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed37",
+          "ppo_epochs": 12,
+          "train_seed": 37,
+          "trial": "episodes10000_epochs12_dropout00_lr0p00011043891_seed37"
+        }
+      }
+    ]
+  },
+  "horizons_s": [
+    3,
+    5,
+    10,
+    20,
+    30
+  ],
+  "pilot": false,
+  "arrivals": "repeat the original seed-specific three-second workload with continuous queues",
+  "outages": "repeat original three-second outage windows",
+  "time_features": "three-second phase and original deadline/age scales",
+  "sla_denominator": "tasks with deadlines due by mission end",
+  "reference_manifest_sha256": "a8ea323c3431a553e3a157475f404cdd09d900ca1138751693697149b8c90b7a"
+}

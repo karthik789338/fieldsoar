@@ -1,0 +1,13 @@
+{
+  "complete": 6,
+  "pending": 9,
+  "study": "controlled 3-arm reward design; all methods are full joint MAPPO",
+  "new_nominal_heldout_seeds": [
+    12401,
+    12413,
+    12431,
+    12451,
+    12463
+  ],
+  "warning": "Evaluate every reward arm; do not choose a reward after seeing H3 old seeds. For confirmation, use fresh independently captured H3 mobility and task seeds."
+}

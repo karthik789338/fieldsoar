@@ -1,0 +1,82 @@
+{
+  "NOT_agricultural_model_validation": true,
+  "dataset_summary": {
+    "CWD30": {
+      "max_inference_ms": 7.22899,
+      "mean_inference_ms": 7.039479296875,
+      "mean_input_mb": 0.11157060414552689,
+      "median_inference_ms": 7.02046,
+      "min_inference_ms": 6.93733,
+      "p95_inference_ms": 7.1809205,
+      "samples": 128
+    },
+    "LeafySpurge": {
+      "max_inference_ms": 27.63992,
+      "mean_inference_ms": 27.071104375,
+      "mean_input_mb": 3.9982070699334145,
+      "median_inference_ms": 27.04017,
+      "min_inference_ms": 26.77553,
+      "p95_inference_ms": 27.4204045,
+      "samples": 128
+    },
+    "RumexWeeds": {
+      "max_inference_ms": 83.94489,
+      "mean_inference_ms": 40.53283265625,
+      "mean_input_mb": 5.230650432407856,
+      "median_inference_ms": 38.355180000000004,
+      "min_inference_ms": 29.66738,
+      "p95_inference_ms": 65.04204349999998,
+      "samples": 128
+    }
+  },
+  "device": "cpu",
+  "energy_measured": false,
+  "gpu": null,
+  "gpu_compute_capability": null,
+  "gpu_utilization_measured": false,
+  "model_details": {
+    "CWD30": {
+      "accuracy_evaluated": false,
+      "agriculture_finetuned": false,
+      "architecture": "mobilenet_v3_small",
+      "local_weights_sha256": "047dcff4addef86ea5bc2eff13c9614dc11f47ab1160d0a71a25e7db994f4e1f",
+      "model_origin": "torchvision",
+      "weights_mode": "pretrained",
+      "weights_url": "https://download.pytorch.org/models/mobilenet_v3_small-047dcff4.pth"
+    },
+    "LeafySpurge": {
+      "accuracy_evaluated": false,
+      "agriculture_finetuned": false,
+      "architecture": "lraspp_mobilenet_v3_large",
+      "local_weights_sha256": "d234d4eae9d55d5f76de18b77cf0dc62c66fe5c5482758209d00f950c92bb280",
+      "model_origin": "torchvision",
+      "weights_mode": "pretrained",
+      "weights_url": "https://download.pytorch.org/models/lraspp_mobilenet_v3_large-d234d4ea.pth"
+    },
+    "RumexWeeds": {
+      "accuracy_evaluated": false,
+      "agriculture_finetuned": false,
+      "architecture": "fasterrcnn_mobilenet_v3_large_320_fpn",
+      "local_weights_sha256": "907ea3f91ff92242bc1baea8049276a3e76bca48ce7560bd268cc029f37977b5",
+      "model_origin": "torchvision",
+      "weights_mode": "pretrained",
+      "weights_url": "https://download.pytorch.org/models/fasterrcnn_mobilenet_v3_large_320_fpn-907ea3f9.pth"
+    }
+  },
+  "note": "Processing-time measurements; application accuracy, SLA deadlines, Jetson runtime and energy remain unmeasured.",
+  "platform": "Linux-4.18.0-553.172.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "profile_kind": "frozen_reference_architecture_forward_pass",
+  "profiles_sha256": "595e8b0786b183dfd1475c0b1eed353eed81f020ddedf78108d485aab1956921",
+  "python": "3.12.15 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:20:25) [GCC 14.3.0]",
+  "reference_weight_limitation": "Pretrained generic computer vision weights are not agricultural weed/crop checkpoints",
+  "repeats": 10,
+  "sample_manifest_sha256": "25ccd97b9effa48e287a9904336d6ccc618a39d51c0849ce35f3632814f2af7c",
+  "schema_version": 1,
+  "script_sha256": "af7d58ac793255c439106fbdfb8a38e89e2ff293d75644e80a1972f03360ca05",
+  "slurm_job_id": "19126250",
+  "torch_version": "2.7.1+cu118",
+  "torchvision_version": "0.22.1+cu118",
+  "training_or_finetuning_performed": false,
+  "warmup": 5,
+  "weights_mode": "pretrained"
+}

@@ -1,0 +1,51 @@
+{
+  "cloud_only": {
+    "evaluation_episodes": 15,
+    "mean_batch_sla": 0.0,
+    "mean_critical_sla": 0.0322916,
+    "mean_overall_sla": 0.010763866666666667,
+    "mean_standard_sla": 0.0
+  },
+  "critical_first": {
+    "evaluation_episodes": 15,
+    "mean_batch_sla": 0.23489593333333333,
+    "mean_critical_sla": 0.0447916,
+    "mean_overall_sla": 0.17222226666666665,
+    "mean_standard_sla": 0.23697913333333334
+  },
+  "edf": {
+    "evaluation_episodes": 15,
+    "mean_batch_sla": 0.23489593333333333,
+    "mean_critical_sla": 0.0447916,
+    "mean_overall_sla": 0.14791673333333333,
+    "mean_standard_sla": 0.16406266666666666
+  },
+  "edge_only": {
+    "evaluation_episodes": 15,
+    "mean_batch_sla": 0.0,
+    "mean_critical_sla": 0.0322916,
+    "mean_overall_sla": 0.010763866666666667,
+    "mean_standard_sla": 0.0
+  },
+  "local_only": {
+    "evaluation_episodes": 15,
+    "mean_batch_sla": 0.16145800000000002,
+    "mean_critical_sla": 0.2786460666666667,
+    "mean_overall_sla": 0.1987848,
+    "mean_standard_sla": 0.15625
+  },
+  "mappo": {
+    "evaluation_episodes": 45,
+    "mean_batch_sla": 0.009374733333333333,
+    "mean_critical_sla": 0.9901042222222222,
+    "mean_overall_sla": 0.3344910222222222,
+    "mean_standard_sla": 0.003993022222222222
+  },
+  "network_aware_edf": {
+    "evaluation_episodes": 15,
+    "mean_batch_sla": 0.40625,
+    "mean_critical_sla": 0.10416666666666667,
+    "mean_overall_sla": 0.24236113333333334,
+    "mean_standard_sla": 0.21666666666666667
+  }
+}

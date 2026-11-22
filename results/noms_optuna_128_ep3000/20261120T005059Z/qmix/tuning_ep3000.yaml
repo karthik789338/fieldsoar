@@ -1,0 +1,109 @@
+schema_version: 1
+algorithm: FieldVision_NOMS_IPPO_QMIX_REFERENCE_V9
+hidden_size: 128
+learning_rate: 0.00011043890911284906
+top_k: 3
+torch_threads: 2
+update_every_episodes: 4
+eval_interval_episodes: 50
+minibatch_steps: 64
+gamma: 0.99
+gae_lambda: 0.95
+dual_lr: 0.05
+sla_targets:
+  critical: 0.95
+  standard: 0.8
+  batch: 0.6
+grid:
+  episodes:
+  - 3000
+  ppo_epochs:
+  - 12
+  dropout:
+  - 0.0
+  learning_rates:
+  - 0.00011043890911284906
+training:
+  seeds:
+  - 11
+  - 23
+  - 37
+validation:
+  seeds:
+  - 4301
+  - 4313
+  - 4331
+heldout:
+  seeds:
+  - 10401
+  - 10413
+  - 10431
+  - 10451
+  - 10463
+training_scenarios:
+- name: v6_train_low_9x_net1p5x
+  onboard_slowdown: 9.0
+  network_scale: 1.5
+- name: v6_train_mixed_13p5x_net1p65x
+  onboard_slowdown: 13.5
+  network_scale: 1.65
+- name: v6_train_mixed_17p5x_net2p2x
+  onboard_slowdown: 17.5
+  network_scale: 2.2
+- name: v6_train_heavy_21p5x_net2p45x
+  onboard_slowdown: 21.5
+  network_scale: 2.45
+- name: v6_train_heavy_25x_net2p9x
+  onboard_slowdown: 25.0
+  network_scale: 2.9
+- name: v6_train_congested_15p5x_net1p1x
+  onboard_slowdown: 15.5
+  network_scale: 1.1
+validation_scenarios:
+- name: v6_val_mixed_12p75x_net1p4x
+  onboard_slowdown: 12.75
+  network_scale: 1.4
+- name: v6_val_heavy_20p25x_net2p25x
+  onboard_slowdown: 20.25
+  network_scale: 2.25
+- name: v6_val_heavy_24p75x_net3x
+  onboard_slowdown: 24.75
+  network_scale: 3.0
+heldout_scenarios:
+- name: h123_lr3_nominal_mixed_11p25_net1p4
+  onboard_slowdown: 11.25
+  network_scale: 1.4
+- name: h123_lr3_nominal_stress_18p75_net1p9
+  onboard_slowdown: 18.75
+  network_scale: 1.9
+- name: h123_lr3_nominal_high_24p5_net2p8
+  onboard_slowdown: 24.5
+  network_scale: 2.8
+experiment_note: Prospectively frozen IPPO/QMIX comparison against completed v8. Same
+  scenarios/seeds/reward and LR3 validation grid. QMIX uses 900 episodes, off-policy
+  replay/TD; PPO epochs field is recorded for grid schema only, not QMIX optimization.
+checkpoint_selection:
+  mode: scenario_critical_floor
+  critical_floor: 0.95
+critic_arch: pooled
+reward_design:
+  mode: class_weighted
+  on_time_weights:
+    critical: 3.0
+    standard: 1.0
+    batch: 0.75
+  miss_weights:
+    critical: 4.0
+    standard: 1.0
+    batch: 0.75
+feasibility_reference_targets:
+  critical: 0.95
+  standard: 0.8
+  batch: 0.6
+qmix_replay_capacity: 20000
+qmix_batch_size: 32
+qmix_warmup_steps: 256
+qmix_target_update_steps: 500
+qmix_updates_per_step: 1
+qmix_epsilon_initial: 1.0
+qmix_epsilon_final: 0.05

@@ -1,0 +1,158 @@
+{
+  "scope": "H3_INDEPENDENT_MOBILITY_EVALUATION",
+  "external_evaluation_plan_sha256": "01715bc3863baee62ad7f868426dffd526dcafc752f8563b9ceeb4ac8f869889",
+  "model_selection": "training/validation only; all selected training seeds evaluated",
+  "summary": {
+    "critical_sla": 0.7532638933333333,
+    "overall_sla": 0.38687501333333335,
+    "standard_sla": 0.0035416666666666665,
+    "batch_sla": 0.3543055333333333,
+    "fairness": 0.8469902133333334,
+    "selection_score": 0.6250277853333334
+  },
+  "sample_size": 75,
+  "selected_model": {
+    "base_config_sha256": "5d2714ad42391506a7cd6f4ad36f8f4cb1ec260f5ff1568d838f3608c181599f",
+    "checkpoint_path": "results/noms_h123_lr3_v8/fleet32/fixed_compute_tier_training/episodes900_epochs12_dropout00_lr5em05_seed37/best_validation_checkpoint.pt",
+    "chosen_config": {
+      "dropout": 0.0,
+      "episodes": 900,
+      "learning_rate": 5e-05,
+      "mean_validation_score": 1.8755805856477779,
+      "ppo_epochs": 12,
+      "trial_count": 3
+    },
+    "chosen_training_trial": {
+      "best_episode": 700,
+      "best_validation_score": 2.437500111111111,
+      "dropout": 0.0,
+      "episodes": 900,
+      "learning_rate": 5e-05,
+      "path": "results/noms_h123_lr3_v8/fleet32/fixed_compute_tier_training/episodes900_epochs12_dropout00_lr5em05_seed37",
+      "ppo_epochs": 12,
+      "train_seed": 37,
+      "trial": "episodes900_epochs12_dropout00_lr5em05_seed37"
+    },
+    "environment_sha256": "0a8ac5415374654c181fe0ec7cfee23b1b013d1a165619371df1216b413840f3",
+    "grid_tested": [
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 0.0003,
+        "ppo_epochs": 12,
+        "variant": "fixed_compute_tier"
+      },
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 0.0001,
+        "ppo_epochs": 12,
+        "variant": "fixed_compute_tier"
+      },
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 5e-05,
+        "ppo_epochs": 12,
+        "variant": "fixed_compute_tier"
+      }
+    ],
+    "heldout_evaluated": false,
+    "heldout_evaluates_all_selected_training_seeds": true,
+    "limitations": [
+      "UAV local timings are assumed slowdowns of measured server CPU",
+      "Link capacities are analytical and uncalibrated",
+      "Cloud latency/energy not measured",
+      "Only 4 UAVs and 3s network trajectory currently available"
+    ],
+    "policy_variant": "fixed_compute_tier",
+    "runner_sha256": "395785a6d76357e5c83779c30b77a1eeef9efdead02f00823dd4647f7fd88b73",
+    "selected_training_trials": [
+      {
+        "best_episode": 600,
+        "best_validation_score": 0.8645886458322223,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 5e-05,
+        "path": "results/noms_h123_lr3_v8/fleet32/fixed_compute_tier_training/episodes900_epochs12_dropout00_lr5em05_seed11",
+        "ppo_epochs": 12,
+        "train_seed": 11,
+        "trial": "episodes900_epochs12_dropout00_lr5em05_seed11"
+      },
+      {
+        "best_episode": 300,
+        "best_validation_score": 2.324653,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 5e-05,
+        "path": "results/noms_h123_lr3_v8/fleet32/fixed_compute_tier_training/episodes900_epochs12_dropout00_lr5em05_seed23",
+        "ppo_epochs": 12,
+        "train_seed": 23,
+        "trial": "episodes900_epochs12_dropout00_lr5em05_seed23"
+      },
+      {
+        "best_episode": 700,
+        "best_validation_score": 2.437500111111111,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 5e-05,
+        "path": "results/noms_h123_lr3_v8/fleet32/fixed_compute_tier_training/episodes900_epochs12_dropout00_lr5em05_seed37",
+        "ppo_epochs": 12,
+        "train_seed": 37,
+        "trial": "episodes900_epochs12_dropout00_lr5em05_seed37"
+      }
+    ],
+    "selection_based_on": "validation_only",
+    "tuning_config_sha256": "870593ee836b980c644ef20fff89f28d2c739b202d530adb7e462b2c797a9ad4"
+  },
+  "training_seed_count": 3,
+  "per_training_seed": [
+    {
+      "training_seed": 11,
+      "critical_sla": 0.68333332,
+      "overall_sla": 0.49416672,
+      "standard_sla": 0.010625,
+      "batch_sla": 0.74625,
+      "fairness": 0.89947592,
+      "selection_score": 0.61712501,
+      "evaluation_episodes": 25
+    },
+    {
+      "training_seed": 23,
+      "critical_sla": 0.83458336,
+      "overall_sla": 0.30541651999999997,
+      "standard_sla": 0.0,
+      "batch_sla": 0.030625,
+      "fairness": 0.88311268,
+      "selection_score": 0.649374966,
+      "evaluation_episodes": 25
+    },
+    {
+      "training_seed": 37,
+      "critical_sla": 0.741875,
+      "overall_sla": 0.3610418,
+      "standard_sla": 0.0,
+      "batch_sla": 0.2860416,
+      "fairness": 0.75838204,
+      "selection_score": 0.60858338,
+      "evaluation_episodes": 25
+    }
+  ],
+  "policy_variant": "fixed_compute_tier",
+  "compared_policies": [
+    "fixed_compute_tier",
+    "local_only",
+    "edge_only",
+    "cloud_only",
+    "edf",
+    "network_aware_edf",
+    "critical_first"
+  ],
+  "no_physical_sla_guarantee": true
+}

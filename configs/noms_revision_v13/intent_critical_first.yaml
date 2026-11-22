@@ -1,0 +1,4 @@
+schema_version: 1
+name: critical_first
+targets: {critical: 0.95, standard: 0.50, batch: 0.20}
+weights: {critical: 5.0, standard: 1.0, batch: 0.5}

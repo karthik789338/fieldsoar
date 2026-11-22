@@ -1,0 +1,158 @@
+{
+  "scope": "H1_H2_HELDOUT_UNCALIBRATED_NETWORK_SENSITIVITY",
+  "external_evaluation_plan_sha256": null,
+  "model_selection": "training/validation only; all selected training seeds evaluated",
+  "summary": {
+    "critical_sla": 0.9986111111111111,
+    "overall_sla": 0.5319444,
+    "standard_sla": 0.04027777777777778,
+    "batch_sla": 0.5569444444444445,
+    "fairness": 0.9897850666666667,
+    "selection_score": 0.8352777622222223
+  },
+  "sample_size": 45,
+  "selected_model": {
+    "base_config_sha256": "8bf374f17493950a0c5147568b448b596121e7d4e2fd9c721ac2331f03b66401",
+    "checkpoint_path": "results/noms_h123_lr3_v8/fleet16/full_constrained_training/episodes900_epochs12_dropout00_lr0p0001_seed11/best_validation_checkpoint.pt",
+    "chosen_config": {
+      "dropout": 0.0,
+      "episodes": 900,
+      "learning_rate": 0.0001,
+      "mean_validation_score": 2.518132740740741,
+      "ppo_epochs": 12,
+      "trial_count": 3
+    },
+    "chosen_training_trial": {
+      "best_episode": 900,
+      "best_validation_score": 2.6053242222222224,
+      "dropout": 0.0,
+      "episodes": 900,
+      "learning_rate": 0.0001,
+      "path": "results/noms_h123_lr3_v8/fleet16/full_constrained_training/episodes900_epochs12_dropout00_lr0p0001_seed11",
+      "ppo_epochs": 12,
+      "train_seed": 11,
+      "trial": "episodes900_epochs12_dropout00_lr0p0001_seed11"
+    },
+    "environment_sha256": "0a8ac5415374654c181fe0ec7cfee23b1b013d1a165619371df1216b413840f3",
+    "grid_tested": [
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 0.0003,
+        "ppo_epochs": 12,
+        "variant": "full"
+      },
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 0.0001,
+        "ppo_epochs": 12,
+        "variant": "full"
+      },
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 5e-05,
+        "ppo_epochs": 12,
+        "variant": "full"
+      }
+    ],
+    "heldout_evaluated": false,
+    "heldout_evaluates_all_selected_training_seeds": true,
+    "limitations": [
+      "UAV local timings are assumed slowdowns of measured server CPU",
+      "Link capacities are analytical and uncalibrated",
+      "Cloud latency/energy not measured",
+      "Only 4 UAVs and 3s network trajectory currently available"
+    ],
+    "policy_variant": "full",
+    "runner_sha256": "395785a6d76357e5c83779c30b77a1eeef9efdead02f00823dd4647f7fd88b73",
+    "selected_training_trials": [
+      {
+        "best_episode": 900,
+        "best_validation_score": 2.6053242222222224,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 0.0001,
+        "path": "results/noms_h123_lr3_v8/fleet16/full_constrained_training/episodes900_epochs12_dropout00_lr0p0001_seed11",
+        "ppo_epochs": 12,
+        "train_seed": 11,
+        "trial": "episodes900_epochs12_dropout00_lr0p0001_seed11"
+      },
+      {
+        "best_episode": 850,
+        "best_validation_score": 2.5856483333333333,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 0.0001,
+        "path": "results/noms_h123_lr3_v8/fleet16/full_constrained_training/episodes900_epochs12_dropout00_lr0p0001_seed23",
+        "ppo_epochs": 12,
+        "train_seed": 23,
+        "trial": "episodes900_epochs12_dropout00_lr0p0001_seed23"
+      },
+      {
+        "best_episode": 300,
+        "best_validation_score": 2.3634256666666666,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 0.0001,
+        "path": "results/noms_h123_lr3_v8/fleet16/full_constrained_training/episodes900_epochs12_dropout00_lr0p0001_seed37",
+        "ppo_epochs": 12,
+        "train_seed": 37,
+        "trial": "episodes900_epochs12_dropout00_lr0p0001_seed37"
+      }
+    ],
+    "selection_based_on": "validation_only",
+    "tuning_config_sha256": "cfc5165c0a14053d3eb7f34fd3b41b57bfdb48d059756b69c09cb7a50802f0f3"
+  },
+  "training_seed_count": 3,
+  "per_training_seed": [
+    {
+      "training_seed": 11,
+      "critical_sla": 1.0,
+      "overall_sla": 0.6229166666666667,
+      "standard_sla": 0.12083333333333333,
+      "batch_sla": 0.7479166666666667,
+      "fairness": 0.9935758666666666,
+      "selection_score": 0.8680208333333334,
+      "evaluation_episodes": 15
+    },
+    {
+      "training_seed": 23,
+      "critical_sla": 1.0,
+      "overall_sla": 0.6125001333333333,
+      "standard_sla": 0.0,
+      "batch_sla": 0.8375,
+      "fairness": 0.9942298,
+      "selection_score": 0.8643750466666668,
+      "evaluation_episodes": 15
+    },
+    {
+      "training_seed": 37,
+      "critical_sla": 0.9958333333333333,
+      "overall_sla": 0.36041639999999997,
+      "standard_sla": 0.0,
+      "batch_sla": 0.08541666666666667,
+      "fairness": 0.9815495333333333,
+      "selection_score": 0.7734374066666667,
+      "evaluation_episodes": 15
+    }
+  ],
+  "policy_variant": "full",
+  "compared_policies": [
+    "mappo",
+    "local_only",
+    "edge_only",
+    "cloud_only",
+    "edf",
+    "network_aware_edf",
+    "critical_first"
+  ],
+  "no_physical_sla_guarantee": true
+}

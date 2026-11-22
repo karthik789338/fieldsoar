@@ -1,0 +1,140 @@
+{
+  "scope": "H3_INDEPENDENT_MOBILITY_EVALUATION",
+  "external_evaluation_plan_sha256": "01715bc3863baee62ad7f868426dffd526dcafc752f8563b9ceeb4ac8f869889",
+  "model_selection": "training/validation only; all selected training seeds evaluated",
+  "summary": {
+    "critical_sla": 0.9749999866666667,
+    "overall_sla": 0.6052777866666667,
+    "standard_sla": 0.0175,
+    "batch_sla": 0.7419443866666666,
+    "fairness": 0.9084183333333333,
+    "selection_score": 0.8455972166666667
+  },
+  "sample_size": 75,
+  "selected_model": {
+    "base_config_sha256": "5363719aa2d7f1bc7cbebd6103647f91a52577133e861c92464ab2826798864f",
+    "checkpoint_path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet8/ippo/training/episodes10000_epochs12_dropout00_lr0p0003_seed37/best_validation_checkpoint.pt",
+    "chosen_config": {
+      "dropout": 0.0,
+      "episodes": 10000,
+      "learning_rate": 0.0003,
+      "mean_validation_score": 2.587963074074074,
+      "ppo_epochs": 12,
+      "trial_count": 3
+    },
+    "chosen_training_trial": {
+      "best_episode": 1000,
+      "best_validation_score": 2.592592777777778,
+      "dropout": 0.0,
+      "episodes": 10000,
+      "learning_rate": 0.0003,
+      "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet8/ippo/training/episodes10000_epochs12_dropout00_lr0p0003_seed37",
+      "ppo_epochs": 12,
+      "train_seed": 37,
+      "trial": "episodes10000_epochs12_dropout00_lr0p0003_seed37"
+    },
+    "environment_sha256": "0a8ac5415374654c181fe0ec7cfee23b1b013d1a165619371df1216b413840f3",
+    "grid_tested": [
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 10000,
+        "hidden_size": 128,
+        "learning_rate": 0.0003,
+        "ppo_epochs": 12,
+        "variant": "ippo"
+      }
+    ],
+    "heldout_evaluated": false,
+    "heldout_evaluates_all_selected_training_seeds": true,
+    "limitations": [
+      "UAV local timings are assumed slowdowns of measured server CPU",
+      "Link capacities are analytical and uncalibrated",
+      "Cloud latency/energy not measured",
+      "Only 4 UAVs and 3s network trajectory currently available"
+    ],
+    "policy_variant": "ippo",
+    "runner_sha256": "0283f1c5b83e9c58211a5ea9ab54f6ec87ab4d9a39dfc00a1333a5d4103ea777",
+    "selected_training_trials": [
+      {
+        "best_episode": 7800,
+        "best_validation_score": 2.5810185555555556,
+        "dropout": 0.0,
+        "episodes": 10000,
+        "learning_rate": 0.0003,
+        "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet8/ippo/training/episodes10000_epochs12_dropout00_lr0p0003_seed11",
+        "ppo_epochs": 12,
+        "train_seed": 11,
+        "trial": "episodes10000_epochs12_dropout00_lr0p0003_seed11"
+      },
+      {
+        "best_episode": 8750,
+        "best_validation_score": 2.590277888888889,
+        "dropout": 0.0,
+        "episodes": 10000,
+        "learning_rate": 0.0003,
+        "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet8/ippo/training/episodes10000_epochs12_dropout00_lr0p0003_seed23",
+        "ppo_epochs": 12,
+        "train_seed": 23,
+        "trial": "episodes10000_epochs12_dropout00_lr0p0003_seed23"
+      },
+      {
+        "best_episode": 1000,
+        "best_validation_score": 2.592592777777778,
+        "dropout": 0.0,
+        "episodes": 10000,
+        "learning_rate": 0.0003,
+        "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet8/ippo/training/episodes10000_epochs12_dropout00_lr0p0003_seed37",
+        "ppo_epochs": 12,
+        "train_seed": 37,
+        "trial": "episodes10000_epochs12_dropout00_lr0p0003_seed37"
+      }
+    ],
+    "selection_based_on": "validation_only",
+    "tuning_config_sha256": "8a359da5f9d19d7d5700c7bc6f010597e9ebd4d95c0d52a5258c2afdef363bdf"
+  },
+  "training_seed_count": 3,
+  "per_training_seed": [
+    {
+      "training_seed": 11,
+      "critical_sla": 0.9825,
+      "overall_sla": 0.59999996,
+      "standard_sla": 0.0175,
+      "batch_sla": 0.71583328,
+      "fairness": 0.90435768,
+      "selection_score": 0.848624986,
+      "evaluation_episodes": 25
+    },
+    {
+      "training_seed": 23,
+      "critical_sla": 0.98999996,
+      "overall_sla": 0.62333332,
+      "standard_sla": 0.0225,
+      "batch_sla": 0.77583328,
+      "fairness": 0.9125222,
+      "selection_score": 0.861666636,
+      "evaluation_episodes": 25
+    },
+    {
+      "training_seed": 37,
+      "critical_sla": 0.9525,
+      "overall_sla": 0.59250008,
+      "standard_sla": 0.0125,
+      "batch_sla": 0.7341666,
+      "fairness": 0.90837512,
+      "selection_score": 0.826500028,
+      "evaluation_episodes": 25
+    }
+  ],
+  "policy_variant": "ippo",
+  "compared_policies": [
+    "ippo",
+    "local_only",
+    "edge_only",
+    "cloud_only",
+    "edf",
+    "network_aware_edf",
+    "critical_first"
+  ],
+  "no_physical_sla_guarantee": true
+}

@@ -1,0 +1,43 @@
+{
+  "assumptions": {
+    "carrier_frequency_ghz": 2.4,
+    "channel_bandwidth_mhz": 20.0,
+    "duration_s": 3.0,
+    "ground_station_m": [
+      250.0,
+      250.0,
+      10.0
+    ],
+    "interference_margin_db": 3.0,
+    "max_link_mbps": 100.0,
+    "n_uavs": 32,
+    "noise_figure_db": 7.0,
+    "path_loss_exponent": 2.7,
+    "protocol_efficiency": 0.5,
+    "rician_k": 8.0,
+    "seed": 27,
+    "shadow_ar1_rho": 0.95,
+    "shadow_sigma_db": 4.0,
+    "shared_bottleneck_mbps": 24.0,
+    "snr_disconnect_db": -5.0,
+    "tick_s": 0.1,
+    "tx_power_dbm": 20.0
+  },
+  "assumptions_sha256": "b4ac6d86199c0fa0a91d8fc32d93e98154d62085057eeee481970c1b0864ea0d",
+  "assumptions_yaml": "data/traces/radio_32uav_seed27.yaml",
+  "capture_manifest_path": "results/uavnetsim_native_telemetry_32uav_seed27/uavnetsim_capture_manifest.json",
+  "capture_manifest_sha256": "931cce91910c8c45bf8d600b80b5a5061c0d0c9d48515823c5dc8527213f21c5",
+  "diagnostics_csv": "data/traces/uavnetsim_trajectory_analytical_uplink_32uav_3s_seed27.diagnostics.csv",
+  "diagnostics_sha256": "9c80190d083b6f380be8638026098ae5a64bea41b468b067d37a0b8784a50fae",
+  "generated_trace_csv": "data/traces/uavnetsim_trajectory_analytical_uplink_32uav_3s_seed27.csv",
+  "generated_trace_sha256": "ce7e4aaca3dae681b680b1b8e5e52b93f53dbab94aa642d01d3fc2ad99fd4761",
+  "generator_sha256": "af7d58ac793255c439106fbdfb8a38e89e2ff293d75644e80a1972f03360ca05",
+  "ground_edge_radio_modeled_in_uavnetsim": false,
+  "measurement_claim": "NONE: trajectories are from UavNetSim, radio rates are analytical assumptions, not measured Sionna/AERPAW capacity",
+  "note": "Research scaffolding. Do NOT report as calibrated UAV-to-edge radio performance.",
+  "provenance": "trajectory_driven_analytical_uncalibrated",
+  "schema_version": 1,
+  "source_trajectory_csv": "results/uavnetsim_native_telemetry_32uav_seed27/uavnetsim_uav_trajectories.csv",
+  "source_trajectory_sha256": "96402d37ba445cac8b02d5a68a1969a3817830882c3c73322b5d79ea36c21b46",
+  "uavnetsim_commit": "c2703f24eb58cdb557a5f67ded5c7b0368a964ed"
+}

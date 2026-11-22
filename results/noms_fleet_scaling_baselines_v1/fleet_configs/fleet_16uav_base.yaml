@@ -1,0 +1,38 @@
+schema_version: 1
+workload_profile_source: measured_reference_cpu_proxy_edge_gpu_assumed_cloud
+seed: 27
+n_uavs: 16
+tick_s: 0.1
+duration_s: 3.0
+network:
+  bottleneck_mbps: 24.0
+  trace_csv: /mnt/pixstor/data/ka9d9/fieldvision/data/traces/uavnetsim_trajectory_analytical_uplink_16uav_3s_seed27.csv
+  trace_provenance: trajectory_driven_analytical_uncalibrated
+  capacity_scale: 1.0
+resources:
+  edge_slots: 2
+  cloud_slots: 2
+profiled_workloads:
+  samples_manifest: data/manifests/agricultural_workload_samples_128_seed2027.json
+  profiles_csv: results/agricultural_reference_gpu_v100_128samples_seed2027/agricultural_reference_inference_profiles.csv
+  profiles_manifest: results/agricultural_reference_gpu_v100_128samples_seed2027/agricultural_reference_inference_manifest.json
+  local_cpu_profiles_csv: results/agricultural_reference_cpu_128samples_seed2027/agricultural_reference_inference_profiles.csv
+  local_cpu_profiles_manifest: results/agricultural_reference_cpu_128samples_seed2027/agricultural_reference_inference_manifest.json
+  min_samples_per_dataset: 128
+  datasets:
+  - CWD30
+  - RumexWeeds
+  - LeafySpurge
+  job_count: 96
+  jobs_per_burst: 16
+  burst_period_s: 0.3
+  assumed_cloud_runtime_multiplier: 0.8
+  service_class_by_dataset:
+    CWD30: critical
+    RumexWeeds: standard
+    LeafySpurge: batch
+  assumed_relative_deadlines_s:
+    critical: 0.75
+    standard: 1.5
+    batch: 1.2
+  assumed_onboard_cpu_slowdown_factor: 1.0

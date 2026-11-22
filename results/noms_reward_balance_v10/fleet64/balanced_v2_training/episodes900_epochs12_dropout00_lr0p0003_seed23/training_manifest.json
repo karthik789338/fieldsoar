@@ -1,0 +1,93 @@
+{
+  "actor_dropout_masks_reused_for_ppo_ratio": true,
+  "actor_local_only": true,
+  "base_config_sha256": "0326b8c639d50ed4bdf769025dae666ff1cf37b04c21ae56b4ec2b85a6e02325",
+  "centralized_critic": true,
+  "checkpoint_selection": {
+    "critical_floor": 0.95,
+    "mode": "scenario_critical_floor"
+  },
+  "critical_dual_final": 7.9994531,
+  "critical_dual_initial": 1.0,
+  "dual_max": 8.0,
+  "dual_updates_are_heuristic_not_proven_sla_guarantees": true,
+  "episodes_executed": 900,
+  "heldout_evaluated": false,
+  "network_capacity_scale_is_analytical_sensitivity_not_measurement": true,
+  "params": {
+    "critic_arch": "pooled",
+    "dropout": 0.0,
+    "episodes": 900,
+    "hidden_size": 128,
+    "learning_rate": 0.0003,
+    "ppo_epochs": 12,
+    "variant": "full"
+  },
+  "reward_design": {
+    "miss_weights": {
+      "batch": 1.25,
+      "critical": 4.0,
+      "standard": 2.0
+    },
+    "mode": "class_weighted",
+    "on_time_weights": {
+      "batch": 1.25,
+      "critical": 3.0,
+      "standard": 2.0
+    }
+  },
+  "scope": "EXPLORATORY_MAPPO_HYPERPARAMETER_TUNING_UNCALIBRATED_RADIO",
+  "torch": "2.7.1+cu118",
+  "training_scenarios": [
+    {
+      "name": "v6_train_low_9x_net1p5x",
+      "network_scale": 1.5,
+      "onboard_slowdown": 9.0
+    },
+    {
+      "name": "v6_train_mixed_13p5x_net1p65x",
+      "network_scale": 1.65,
+      "onboard_slowdown": 13.5
+    },
+    {
+      "name": "v6_train_mixed_17p5x_net2p2x",
+      "network_scale": 2.2,
+      "onboard_slowdown": 17.5
+    },
+    {
+      "name": "v6_train_heavy_21p5x_net2p45x",
+      "network_scale": 2.45,
+      "onboard_slowdown": 21.5
+    },
+    {
+      "name": "v6_train_heavy_25x_net2p9x",
+      "network_scale": 2.9,
+      "onboard_slowdown": 25.0
+    },
+    {
+      "name": "v6_train_congested_15p5x_net1p1x",
+      "network_scale": 1.1,
+      "onboard_slowdown": 15.5
+    }
+  ],
+  "training_seed": 23,
+  "validation_best": 0.9322953275477778,
+  "validation_best_episode": 350,
+  "validation_scenarios": [
+    {
+      "name": "v6_val_mixed_12p75x_net1p4x",
+      "network_scale": 1.4,
+      "onboard_slowdown": 12.75
+    },
+    {
+      "name": "v6_val_heavy_20p25x_net2p25x",
+      "network_scale": 2.25,
+      "onboard_slowdown": 20.25
+    },
+    {
+      "name": "v6_val_heavy_24p75x_net3x",
+      "network_scale": 3.0,
+      "onboard_slowdown": 24.75
+    }
+  ]
+}

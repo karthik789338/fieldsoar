@@ -1,0 +1,21 @@
+n_uavs: 32
+duration_s: 3.0
+tick_s: 0.1
+seed: 27
+ground_station_m:
+- 250.0
+- 250.0
+- 10.0
+carrier_frequency_ghz: 2.4
+channel_bandwidth_mhz: 20.0
+tx_power_dbm: 20.0
+noise_figure_db: 7.0
+path_loss_exponent: 2.7
+shadow_sigma_db: 4.0
+shadow_ar1_rho: 0.95
+rician_k: 8.0
+interference_margin_db: 3.0
+snr_disconnect_db: -5.0
+protocol_efficiency: 0.5
+max_link_mbps: 100.0
+shared_bottleneck_mbps: 24.0

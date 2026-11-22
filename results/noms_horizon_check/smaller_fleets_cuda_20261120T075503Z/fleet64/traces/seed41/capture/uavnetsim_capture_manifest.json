@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-11-20T09:57:27.720833+00:00",
+  "uavnetsim_git": {
+    "commit": "c2703f24eb58cdb557a5f67ded5c7b0368a964ed",
+    "dirty": true
+  },
+  "command_parameters": {
+    "nodes": 64,
+    "duration_s": 30,
+    "seed": 41,
+    "mobility": "GaussMarkov3D"
+  },
+  "trajectory_generation": "uavnetsim_generate_trajectory_mobility_only",
+  "native_packet_telemetry_captured": false,
+  "sionna_rt_used": false,
+  "sleep_model": "UAVs remain active in the mobility-only generator",
+  "scene_xml_sha256": "b39e51f773db97fdb70906ba4526ccffcb521623f55641fd2ab15adb5f711587",
+  "scene_json_sha256": "e6e3f0182ae632d33f0a9b674a1e9d053702508000d362edd91e12680742bcda",
+  "trajectories_sha256": "c8b620e1c9aa6ea2c509f4076ed7053d96edc754f057a3b988490c2c85bddfd5",
+  "capacity_trace_created": false,
+  "original_3s_trajectory_sha256": "8746c68944e97ca008a6355ba4d4e14e2e6c8706b54d8ab0e87ad368d39d2191",
+  "original_3s_capture_manifest_sha256": "9ab1cbab2f54e65a9655449b245fbc8620ae97422ae12bcfaf34f8b65676e6c5",
+  "original_3s_radio_sha256": "7f4bca4c2c1a0e71795ac9e6240149c96fef98bd7f78562f1dd47c037772d07c",
+  "original_3s_positions_matched": 1920
+}

@@ -1,0 +1,62 @@
+{
+  "data/traces/uavnetsim_trajectory_analytical_uplink_4uav_3s_seed27.csv": {
+    "trace_sha256": "3856819e6dad51fdff913e13fd185e59fab817d0d94113790dee96fffca027b4",
+    "published_prefix": "results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet4/full/nominal_trace_prefixes/radio_30s_seed27_prefix_3s.csv",
+    "matched_original_trace_sha256": true
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_4uav_3s_seed41.csv": {
+    "trace_sha256": "cd824353315cf29605b0afedcf3ea9a51eebbb991818ff0bb309445b112c18fc",
+    "published_prefix": "results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet4/full/stress_trace_prefixes/radio_30s_seed41_prefix_3s.csv",
+    "matched_original_trace_sha256": true
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_8uav_3s_seed27.csv": {
+    "trace_sha256": "e3d75a24630e499fa25399cf64df4f2c01b79e25a6573a349a86e5499cd66c16",
+    "published_prefix": "results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet8/full/nominal_trace_prefixes/radio_30s_seed27_prefix_3s.csv",
+    "matched_original_trace_sha256": true
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_8uav_3s_seed41.csv": {
+    "trace_sha256": "709cdd6a68b6235ec3ef73de49cb02b77034c83035e198ecc48e2a43c56493f1",
+    "published_prefix": "results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet8/full/stress_trace_prefixes/radio_30s_seed41_prefix_3s.csv",
+    "matched_original_trace_sha256": true
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_16uav_3s_seed27.csv": {
+    "trace_sha256": "d3a82ad933e738f4246dc211bc78d36dbfb29c6c79d6b5c4e616aaa0937bc5b0",
+    "published_prefix": "results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet16/full/nominal_trace_prefixes/radio_30s_seed27_prefix_3s.csv",
+    "matched_original_trace_sha256": true
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_16uav_3s_seed41.csv": {
+    "trace_sha256": "28adbb4bc220e78e5ee5ddc91c0f0e008b612c72271c8f3164c9db401bab79a0",
+    "published_prefix": "results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet16/full/stress_trace_prefixes/radio_30s_seed41_prefix_3s.csv",
+    "matched_original_trace_sha256": true
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_32uav_3s_seed27.csv": {
+    "trace_sha256": "ce7e4aaca3dae681b680b1b8e5e52b93f53dbab94aa642d01d3fc2ad99fd4761",
+    "published_prefix": "results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet32/full/nominal_trace_prefixes/radio_30s_seed27_prefix_3s.csv",
+    "matched_original_trace_sha256": true
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_32uav_3s_seed41.csv": {
+    "trace_sha256": "fdb590b7cf58c98440d6ffa2bb6068e4be9ecd1d350ea36f3c28aec44e535a40",
+    "published_prefix": "results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet32/full/stress_trace_prefixes/radio_30s_seed41_prefix_3s.csv",
+    "matched_original_trace_sha256": true
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_64uav_3s_seed27.csv": {
+    "trace_sha256": "5376f0aa5dec36bbe8939af9b530b05ca2377409cce9d034b7aa85d9df690de3",
+    "published_prefix": "results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet64/full/nominal_trace_prefixes/radio_30s_seed27_prefix_3s.csv",
+    "matched_original_trace_sha256": true
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_64uav_3s_seed41.csv": {
+    "trace_sha256": "7f4bca4c2c1a0e71795ac9e6240149c96fef98bd7f78562f1dd47c037772d07c",
+    "published_prefix": "results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet64/full/stress_trace_prefixes/radio_30s_seed41_prefix_3s.csv",
+    "matched_original_trace_sha256": true
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_128uav_3s_seed27.csv": {
+    "trace_sha256": "7b934e9c5f98d10513763a643be0b35084517b244986561f98ed9306aafc2422",
+    "published_prefix": "results/noms_horizon_check/mobility_cuda_20261120T050646Z/full/nominal_trace_prefixes/radio_30s_seed27_prefix_3s.csv",
+    "matched_original_trace_sha256": false
+  },
+  "data/traces/uavnetsim_trajectory_analytical_uplink_128uav_3s_seed41.csv": {
+    "trace_sha256": "f87913cadf3f016e812cd39f552436600683265fe0d902aa70dd2074b3fac7dc",
+    "published_prefix": "results/noms_horizon_check/mobility_cuda_20261120T050646Z/full/stress_trace_prefixes/radio_30s_seed41_prefix_3s.csv",
+    "matched_original_trace_sha256": false
+  }
+}

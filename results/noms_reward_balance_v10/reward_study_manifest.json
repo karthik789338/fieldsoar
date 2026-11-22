@@ -1,0 +1,110 @@
+{
+  "arms": {
+    "balanced_v1": {
+      "miss": [
+        4.0,
+        1.5,
+        1.0
+      ],
+      "success": [
+        3.0,
+        1.5,
+        1.0
+      ]
+    },
+    "balanced_v2": {
+      "miss": [
+        4.0,
+        2.0,
+        1.25
+      ],
+      "success": [
+        3.0,
+        2.0,
+        1.25
+      ]
+    },
+    "baseline": {
+      "miss": [
+        4.0,
+        1.0,
+        0.75
+      ],
+      "success": [
+        3.0,
+        1.0,
+        0.75
+      ]
+    }
+  },
+  "configs": {
+    "balanced_v1": {
+      "path": "results/noms_reward_balance_v10/configs/balanced_v1_v10.yaml",
+      "sha256": "d479aeae60cca52129a3067ec806862175097cc0b6479d22c26019c572caeb58"
+    },
+    "balanced_v2": {
+      "path": "results/noms_reward_balance_v10/configs/balanced_v2_v10.yaml",
+      "sha256": "79a81761113874af9bfbd62380446bffadc10f390644f4105b1b4890027c7b3a"
+    },
+    "baseline": {
+      "path": "results/noms_reward_balance_v10/configs/baseline_v10.yaml",
+      "sha256": "a58679ddb633e19958c3bd3fc45feb50de1e5c3842e8136016f9f51b23f8a47b"
+    }
+  },
+  "do_not_use_h3_seed41_for_selection": true,
+  "frozen_learning_rate": 0.0003,
+  "new_nominal_heldout_seeds": [
+    12401,
+    12413,
+    12431,
+    12451,
+    12463
+  ],
+  "note": "Critical SLA >=95% is a validation constraint only, not a promise or full feasibility guarantee.",
+  "provenance": {
+    "environment_sha256": "0a8ac5415374654c181fe0ec7cfee23b1b013d1a165619371df1216b413840f3",
+    "runner_sha256": "395785a6d76357e5c83779c30b77a1eeef9efdead02f00823dd4647f7fd88b73",
+    "template_sha256": "870593ee836b980c644ef20fff89f28d2c739b202d530adb7e462b2c797a9ad4"
+  },
+  "reward_mapping": {
+    "balanced_v1": {
+      "miss_class_weights_key": "miss_weights",
+      "old_heldout_seeds": [
+        10401,
+        10413,
+        10431,
+        10451,
+        10463
+      ],
+      "success_class_weights_key": "on_time_weights"
+    },
+    "balanced_v2": {
+      "miss_class_weights_key": "miss_weights",
+      "old_heldout_seeds": [
+        10401,
+        10413,
+        10431,
+        10451,
+        10463
+      ],
+      "success_class_weights_key": "on_time_weights"
+    },
+    "baseline": {
+      "miss_class_weights_key": "miss_weights",
+      "old_heldout_seeds": [
+        10401,
+        10413,
+        10431,
+        10451,
+        10463
+      ],
+      "success_class_weights_key": "on_time_weights"
+    }
+  },
+  "schema": "FieldVision-NOMS-v10-controlled-reward-ablation",
+  "training_seeds": [
+    11,
+    23,
+    37
+  ]
+}

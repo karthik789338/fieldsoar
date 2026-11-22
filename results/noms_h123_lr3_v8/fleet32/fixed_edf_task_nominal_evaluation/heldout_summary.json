@@ -1,0 +1,158 @@
+{
+  "scope": "H1_H2_HELDOUT_UNCALIBRATED_NETWORK_SENSITIVITY",
+  "external_evaluation_plan_sha256": null,
+  "model_selection": "training/validation only; all selected training seeds evaluated",
+  "summary": {
+    "critical_sla": 0.9552083333333333,
+    "overall_sla": 0.41076393333333333,
+    "standard_sla": 0.005208333333333333,
+    "batch_sla": 0.271875,
+    "fairness": 0.9672638222222222,
+    "selection_score": 0.7646527933333334
+  },
+  "sample_size": 45,
+  "selected_model": {
+    "base_config_sha256": "5d2714ad42391506a7cd6f4ad36f8f4cb1ec260f5ff1568d838f3608c181599f",
+    "checkpoint_path": "results/noms_h123_lr3_v8/fleet32/fixed_edf_task_training/episodes900_epochs12_dropout00_lr0p0003_seed37/best_validation_checkpoint.pt",
+    "chosen_config": {
+      "dropout": 0.0,
+      "episodes": 900,
+      "learning_rate": 0.0003,
+      "mean_validation_score": 1.861884524691111,
+      "ppo_epochs": 12,
+      "trial_count": 3
+    },
+    "chosen_training_trial": {
+      "best_episode": 150,
+      "best_validation_score": 2.3535880000000002,
+      "dropout": 0.0,
+      "episodes": 900,
+      "learning_rate": 0.0003,
+      "path": "results/noms_h123_lr3_v8/fleet32/fixed_edf_task_training/episodes900_epochs12_dropout00_lr0p0003_seed37",
+      "ppo_epochs": 12,
+      "train_seed": 37,
+      "trial": "episodes900_epochs12_dropout00_lr0p0003_seed37"
+    },
+    "environment_sha256": "0a8ac5415374654c181fe0ec7cfee23b1b013d1a165619371df1216b413840f3",
+    "grid_tested": [
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 0.0003,
+        "ppo_epochs": 12,
+        "variant": "fixed_edf_task"
+      },
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 0.0001,
+        "ppo_epochs": 12,
+        "variant": "fixed_edf_task"
+      },
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 5e-05,
+        "ppo_epochs": 12,
+        "variant": "fixed_edf_task"
+      }
+    ],
+    "heldout_evaluated": false,
+    "heldout_evaluates_all_selected_training_seeds": true,
+    "limitations": [
+      "UAV local timings are assumed slowdowns of measured server CPU",
+      "Link capacities are analytical and uncalibrated",
+      "Cloud latency/energy not measured",
+      "Only 4 UAVs and 3s network trajectory currently available"
+    ],
+    "policy_variant": "fixed_edf_task",
+    "runner_sha256": "395785a6d76357e5c83779c30b77a1eeef9efdead02f00823dd4647f7fd88b73",
+    "selected_training_trials": [
+      {
+        "best_episode": 50,
+        "best_validation_score": 2.3362267777777777,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 0.0003,
+        "path": "results/noms_h123_lr3_v8/fleet32/fixed_edf_task_training/episodes900_epochs12_dropout00_lr0p0003_seed11",
+        "ppo_epochs": 12,
+        "train_seed": 11,
+        "trial": "episodes900_epochs12_dropout00_lr0p0003_seed11"
+      },
+      {
+        "best_episode": 850,
+        "best_validation_score": 0.8958387962955556,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 0.0003,
+        "path": "results/noms_h123_lr3_v8/fleet32/fixed_edf_task_training/episodes900_epochs12_dropout00_lr0p0003_seed23",
+        "ppo_epochs": 12,
+        "train_seed": 23,
+        "trial": "episodes900_epochs12_dropout00_lr0p0003_seed23"
+      },
+      {
+        "best_episode": 150,
+        "best_validation_score": 2.3535880000000002,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 0.0003,
+        "path": "results/noms_h123_lr3_v8/fleet32/fixed_edf_task_training/episodes900_epochs12_dropout00_lr0p0003_seed37",
+        "ppo_epochs": 12,
+        "train_seed": 37,
+        "trial": "episodes900_epochs12_dropout00_lr0p0003_seed37"
+      }
+    ],
+    "selection_based_on": "validation_only",
+    "tuning_config_sha256": "870593ee836b980c644ef20fff89f28d2c739b202d530adb7e462b2c797a9ad4"
+  },
+  "training_seed_count": 3,
+  "per_training_seed": [
+    {
+      "training_seed": 11,
+      "critical_sla": 0.984375,
+      "overall_sla": 0.33993053333333334,
+      "standard_sla": 0.005208333333333333,
+      "batch_sla": 0.030208333333333334,
+      "fairness": 0.9795254,
+      "selection_score": 0.7588194366666667,
+      "evaluation_episodes": 15
+    },
+    {
+      "training_seed": 23,
+      "critical_sla": 0.9041666666666667,
+      "overall_sla": 0.5319446,
+      "standard_sla": 0.005208333333333333,
+      "batch_sla": 0.6864583333333333,
+      "fairness": 0.9661579333333333,
+      "selection_score": 0.7738889433333334,
+      "evaluation_episodes": 15
+    },
+    {
+      "training_seed": 37,
+      "critical_sla": 0.9770833333333333,
+      "overall_sla": 0.36041666666666666,
+      "standard_sla": 0.005208333333333333,
+      "batch_sla": 0.09895833333333333,
+      "fairness": 0.9561081333333333,
+      "selection_score": 0.7612500000000001,
+      "evaluation_episodes": 15
+    }
+  ],
+  "policy_variant": "fixed_edf_task",
+  "compared_policies": [
+    "fixed_edf_task",
+    "local_only",
+    "edge_only",
+    "cloud_only",
+    "edf",
+    "network_aware_edf",
+    "critical_first"
+  ],
+  "no_physical_sla_guarantee": true
+}

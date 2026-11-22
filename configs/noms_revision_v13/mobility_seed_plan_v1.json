@@ -1,0 +1,84 @@
+{
+  "captures": [
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_16uav_seed53",
+      "fleet_uavs": 16,
+      "seed": 53,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 16 --seed 53 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_16uav_seed67",
+      "fleet_uavs": 16,
+      "seed": 67,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 16 --seed 67 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_16uav_seed79",
+      "fleet_uavs": 16,
+      "seed": 79,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 16 --seed 79 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_32uav_seed53",
+      "fleet_uavs": 32,
+      "seed": 53,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 32 --seed 53 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_32uav_seed67",
+      "fleet_uavs": 32,
+      "seed": 67,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 32 --seed 67 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_32uav_seed79",
+      "fleet_uavs": 32,
+      "seed": 79,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 32 --seed 79 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_64uav_seed53",
+      "fleet_uavs": 64,
+      "seed": 53,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 64 --seed 53 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_64uav_seed67",
+      "fleet_uavs": 64,
+      "seed": 67,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 64 --seed 67 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_64uav_seed79",
+      "fleet_uavs": 64,
+      "seed": 79,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 64 --seed 79 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_128uav_seed53",
+      "fleet_uavs": 128,
+      "seed": 53,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 128 --seed 53 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_128uav_seed67",
+      "fleet_uavs": 128,
+      "seed": 67,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 128 --seed 67 --samples 250000 --poll-ms 1"
+    },
+    {
+      "expected_capture_dir": "results/uavnetsim_native_telemetry_128uav_seed79",
+      "fleet_uavs": 128,
+      "seed": 79,
+      "suggested_capture_command": "bash run_fieldvision_scale_v10.sh capture 128 --seed 79 --samples 250000 --poll-ms 1"
+    }
+  ],
+  "generated_utc": "2026-11-03T03:28:12.540427+00:00",
+  "network_model_provenance": "trajectory_driven_analytical_uncalibrated",
+  "purpose": "Independent native UavNetSim mobility robustness evaluation",
+  "warnings": [
+    "The existing v10 capture wrapper may restrict seed IDs or require cleanup of unsuccessful runs.",
+    "New trajectories are distinct mobility captures, not measured wireless traces.",
+    "Do not bootstrap individual episodes as independent mobility realizations."
+  ]
+}

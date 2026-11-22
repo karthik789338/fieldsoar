@@ -1,0 +1,158 @@
+{
+  "scope": "H3_INDEPENDENT_MOBILITY_EVALUATION",
+  "external_evaluation_plan_sha256": "01715bc3863baee62ad7f868426dffd526dcafc752f8563b9ceeb4ac8f869889",
+  "model_selection": "training/validation only; all selected training seeds evaluated",
+  "summary": {
+    "critical_sla": 0.9477777733333334,
+    "overall_sla": 0.5536111333333333,
+    "standard_sla": 0.0033333333333333335,
+    "batch_sla": 0.6352777733333334,
+    "fairness": 0.8937832266666667,
+    "selection_score": 0.8098194493333334
+  },
+  "sample_size": 75,
+  "selected_model": {
+    "base_config_sha256": "8bf374f17493950a0c5147568b448b596121e7d4e2fd9c721ac2331f03b66401",
+    "checkpoint_path": "results/noms_h123_lr3_v8/fleet16/decentralized_critic_training/episodes900_epochs12_dropout00_lr0p0003_seed23/best_validation_checkpoint.pt",
+    "chosen_config": {
+      "dropout": 0.0,
+      "episodes": 900,
+      "learning_rate": 0.0003,
+      "mean_validation_score": 2.562500074074074,
+      "ppo_epochs": 12,
+      "trial_count": 3
+    },
+    "chosen_training_trial": {
+      "best_episode": 900,
+      "best_validation_score": 2.5694445555555556,
+      "dropout": 0.0,
+      "episodes": 900,
+      "learning_rate": 0.0003,
+      "path": "results/noms_h123_lr3_v8/fleet16/decentralized_critic_training/episodes900_epochs12_dropout00_lr0p0003_seed23",
+      "ppo_epochs": 12,
+      "train_seed": 23,
+      "trial": "episodes900_epochs12_dropout00_lr0p0003_seed23"
+    },
+    "environment_sha256": "0a8ac5415374654c181fe0ec7cfee23b1b013d1a165619371df1216b413840f3",
+    "grid_tested": [
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 0.0003,
+        "ppo_epochs": 12,
+        "variant": "decentralized_critic"
+      },
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 0.0001,
+        "ppo_epochs": 12,
+        "variant": "decentralized_critic"
+      },
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 900,
+        "hidden_size": 128,
+        "learning_rate": 5e-05,
+        "ppo_epochs": 12,
+        "variant": "decentralized_critic"
+      }
+    ],
+    "heldout_evaluated": false,
+    "heldout_evaluates_all_selected_training_seeds": true,
+    "limitations": [
+      "UAV local timings are assumed slowdowns of measured server CPU",
+      "Link capacities are analytical and uncalibrated",
+      "Cloud latency/energy not measured",
+      "Only 4 UAVs and 3s network trajectory currently available"
+    ],
+    "policy_variant": "decentralized_critic",
+    "runner_sha256": "395785a6d76357e5c83779c30b77a1eeef9efdead02f00823dd4647f7fd88b73",
+    "selected_training_trials": [
+      {
+        "best_episode": 750,
+        "best_validation_score": 2.5671296666666668,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 0.0003,
+        "path": "results/noms_h123_lr3_v8/fleet16/decentralized_critic_training/episodes900_epochs12_dropout00_lr0p0003_seed11",
+        "ppo_epochs": 12,
+        "train_seed": 11,
+        "trial": "episodes900_epochs12_dropout00_lr0p0003_seed11"
+      },
+      {
+        "best_episode": 900,
+        "best_validation_score": 2.5694445555555556,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 0.0003,
+        "path": "results/noms_h123_lr3_v8/fleet16/decentralized_critic_training/episodes900_epochs12_dropout00_lr0p0003_seed23",
+        "ppo_epochs": 12,
+        "train_seed": 23,
+        "trial": "episodes900_epochs12_dropout00_lr0p0003_seed23"
+      },
+      {
+        "best_episode": 700,
+        "best_validation_score": 2.550926,
+        "dropout": 0.0,
+        "episodes": 900,
+        "learning_rate": 0.0003,
+        "path": "results/noms_h123_lr3_v8/fleet16/decentralized_critic_training/episodes900_epochs12_dropout00_lr0p0003_seed37",
+        "ppo_epochs": 12,
+        "train_seed": 37,
+        "trial": "episodes900_epochs12_dropout00_lr0p0003_seed37"
+      }
+    ],
+    "selection_based_on": "validation_only",
+    "tuning_config_sha256": "870593ee836b980c644ef20fff89f28d2c739b202d530adb7e462b2c797a9ad4"
+  },
+  "training_seed_count": 3,
+  "per_training_seed": [
+    {
+      "training_seed": 11,
+      "critical_sla": 0.93458332,
+      "overall_sla": 0.59666672,
+      "standard_sla": 0.00875,
+      "batch_sla": 0.78000004,
+      "fairness": 0.91681788,
+      "selection_score": 0.81631251,
+      "evaluation_episodes": 25
+    },
+    {
+      "training_seed": 23,
+      "critical_sla": 0.95833332,
+      "overall_sla": 0.49458336,
+      "standard_sla": 0.0,
+      "batch_sla": 0.45124996,
+      "fairness": 0.86368448,
+      "selection_score": 0.796020834,
+      "evaluation_episodes": 25
+    },
+    {
+      "training_seed": 37,
+      "critical_sla": 0.95041668,
+      "overall_sla": 0.56958332,
+      "standard_sla": 0.00125,
+      "batch_sla": 0.67458332,
+      "fairness": 0.90084732,
+      "selection_score": 0.817125004,
+      "evaluation_episodes": 25
+    }
+  ],
+  "policy_variant": "decentralized_critic",
+  "compared_policies": [
+    "decentralized_critic",
+    "local_only",
+    "edge_only",
+    "cloud_only",
+    "edf",
+    "network_aware_edf",
+    "critical_first"
+  ],
+  "no_physical_sla_guarantee": true
+}

@@ -1,0 +1,12 @@
+schema_version: 1
+name: balanced
+# Experimentally chosen operator-intent targets; NOT measured agronomic requirements.
+targets:
+  critical: 0.95
+  standard: 0.80
+  batch: 0.60
+# Used by the v13 fairness-aware heuristic; training rewards are not silently changed.
+weights:
+  critical: 3.0
+  standard: 2.0
+  batch: 1.0

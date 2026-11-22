@@ -1,0 +1,43 @@
+{
+  "assumptions": {
+    "carrier_frequency_ghz": 2.4,
+    "channel_bandwidth_mhz": 20.0,
+    "duration_s": 30.0,
+    "ground_station_m": [
+      250.0,
+      250.0,
+      10.0
+    ],
+    "interference_margin_db": 3.0,
+    "max_link_mbps": 100.0,
+    "n_uavs": 64,
+    "noise_figure_db": 7.0,
+    "path_loss_exponent": 2.7,
+    "protocol_efficiency": 0.5,
+    "rician_k": 8.0,
+    "seed": 27,
+    "shadow_ar1_rho": 0.95,
+    "shadow_sigma_db": 4.0,
+    "shared_bottleneck_mbps": 24.0,
+    "snr_disconnect_db": -5.0,
+    "tick_s": 0.1,
+    "tx_power_dbm": 20.0
+  },
+  "assumptions_sha256": "a7d47b2ea959f24ad69966f3a2683e64b094d8bbb9c7ccb0df0a9b1b81bdeda3",
+  "assumptions_yaml": "/mnt/pixstor/data/ka9d9/fieldvision/results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet64/traces/seed27/radio_config.yaml",
+  "capture_manifest_path": "/mnt/pixstor/data/ka9d9/fieldvision/results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet64/traces/seed27/capture/uavnetsim_capture_manifest.json",
+  "capture_manifest_sha256": "079225739fde8a20219df0ce916245d2cb6eea3f4441fb6b7b5e78b14521306a",
+  "diagnostics_csv": "/mnt/pixstor/data/ka9d9/fieldvision/results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet64/traces/seed27/radio_30s_seed27.diagnostics.csv",
+  "diagnostics_sha256": "5ba20ba964dabe3c71689bbe670913eccd1ecd4f7d610386f752144970a4fae1",
+  "generated_trace_csv": "/mnt/pixstor/data/ka9d9/fieldvision/results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet64/traces/seed27/radio_30s_seed27.csv",
+  "generated_trace_sha256": "d758a2a5d98c3fec5ad2ac97f3c2883da513afef3a9db96f8537fb73e435db7a",
+  "generator_sha256": "af7d58ac793255c439106fbdfb8a38e89e2ff293d75644e80a1972f03360ca05",
+  "ground_edge_radio_modeled_in_uavnetsim": false,
+  "measurement_claim": "NONE: trajectories are from UavNetSim, radio rates are analytical assumptions, not measured Sionna/AERPAW capacity",
+  "note": "Research scaffolding. Do NOT report as calibrated UAV-to-edge radio performance.",
+  "provenance": "trajectory_driven_analytical_uncalibrated",
+  "schema_version": 1,
+  "source_trajectory_csv": "/mnt/pixstor/data/ka9d9/fieldvision/results/noms_horizon_check/smaller_fleets_cuda_20261120T075503Z/fleet64/traces/seed27/capture/uavnetsim_uav_trajectories.csv",
+  "source_trajectory_sha256": "66087b2107eeaaeca39e4ed181a957ebeda7d35d25cc4072f6eaedf7d8d8a680",
+  "uavnetsim_commit": "c2703f24eb58cdb557a5f67ded5c7b0368a964ed"
+}

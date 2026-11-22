@@ -1,0 +1,190 @@
+{
+  "traces": {
+    "nominal": {
+      "trace_sha256": "f69260e07681c22ebce4cd15875f714577fb9c6de30e0723a822c77de7c7077b",
+      "generator_manifest_sha256": "ee57b6c113c5b4d927e3acf083d21b3bfa8980e5e635b54dadac4f75f86744a7",
+      "mobility_sha256": "eb1d3f7f3b37fb1fbfd6116bbc002879d8796ac791f6d05d264c6d00db8f8587",
+      "uavnetsim_commit": "c2703f24eb58cdb557a5f67ded5c7b0368a964ed",
+      "network_provenance": "trajectory_driven_analytical_uncalibrated"
+    },
+    "stress": {
+      "trace_sha256": "2073313328fb5f19beccdbc13f2eecdc532cc80b95a1bc0c56a146d55a7b0422",
+      "generator_manifest_sha256": "acb2dd6d3f8de063c2237afe2fd41067021e37ebbb319ba38e3f7b999ae277ca",
+      "mobility_sha256": "545dd628a1482e1f8c6143c1583be43e6b2349ad08456f2d6fec401cbe53a232",
+      "uavnetsim_commit": "c2703f24eb58cdb557a5f67ded5c7b0368a964ed",
+      "network_provenance": "trajectory_driven_analytical_uncalibrated"
+    }
+  },
+  "trace_paths": {
+    "nominal": "/mnt/pixstor/data/ka9d9/fieldvision/results/noms_horizon_check/mobility_cuda_20261120T050646Z/traces/seed27/radio_30s_seed27.csv",
+    "stress": "/mnt/pixstor/data/ka9d9/fieldvision/results/noms_horizon_check/mobility_cuda_20261120T050646Z/traces/seed41/radio_30s_seed41.csv"
+  },
+  "base_sha256": "b82ff61109615687b6f08b324088ff615e701286598e2cc88cbf41a7e872c114",
+  "nominal_plan_sha256": "870593ee836b980c644ef20fff89f28d2c739b202d530adb7e462b2c797a9ad4",
+  "stress_plan_sha256": "01715bc3863baee62ad7f868426dffd526dcafc752f8563b9ceeb4ac8f869889",
+  "evaluation_script_sha256": "7a6518b422418780bca71d5aa19c29df6bf785ff0bede34836191116e3694f78",
+  "selections": {
+    "fieldsoar": [
+      {
+        "training_seed": 11,
+        "checkpoint": "results/noms_scale_v10/fleet128/full_training/episodes900_epochs12_dropout00_lr5em05_seed11/best_validation_checkpoint.pt",
+        "sha256": "cdbdcab44bf2cb6fcaecdc1126a4ebb06a70f3042593334d5a6936c5816a6a5c",
+        "trial": {
+          "best_episode": 750,
+          "best_validation_score": 0.91536753935,
+          "dropout": 0.0,
+          "episodes": 900,
+          "learning_rate": 5e-05,
+          "path": "results/noms_scale_v10/fleet128/full_training/episodes900_epochs12_dropout00_lr5em05_seed11",
+          "ppo_epochs": 12,
+          "train_seed": 11,
+          "trial": "episodes900_epochs12_dropout00_lr5em05_seed11"
+        }
+      },
+      {
+        "training_seed": 23,
+        "checkpoint": "results/noms_scale_v10/fleet128/full_training/episodes900_epochs12_dropout00_lr5em05_seed23/best_validation_checkpoint.pt",
+        "sha256": "01b4dc9a4caea12fcadd2c554e709f5d203505c0dbf7f453e47ab28e3330f7a5",
+        "trial": {
+          "best_episode": 850,
+          "best_validation_score": 2.329571777777778,
+          "dropout": 0.0,
+          "episodes": 900,
+          "learning_rate": 5e-05,
+          "path": "results/noms_scale_v10/fleet128/full_training/episodes900_epochs12_dropout00_lr5em05_seed23",
+          "ppo_epochs": 12,
+          "train_seed": 23,
+          "trial": "episodes900_epochs12_dropout00_lr5em05_seed23"
+        }
+      },
+      {
+        "training_seed": 37,
+        "checkpoint": "results/noms_scale_v10/fleet128/full_training/episodes900_epochs12_dropout00_lr5em05_seed37/best_validation_checkpoint.pt",
+        "sha256": "52f005d48c514a7be900aa08e9b784696ca0fac75bb696447e36b3ac53a8f38b",
+        "trial": {
+          "best_episode": 900,
+          "best_validation_score": 2.329571777777778,
+          "dropout": 0.0,
+          "episodes": 900,
+          "learning_rate": 5e-05,
+          "path": "results/noms_scale_v10/fleet128/full_training/episodes900_epochs12_dropout00_lr5em05_seed37",
+          "ppo_epochs": 12,
+          "train_seed": 37,
+          "trial": "episodes900_epochs12_dropout00_lr5em05_seed37"
+        }
+      }
+    ],
+    "ippo": [
+      {
+        "training_seed": 11,
+        "checkpoint": "results/noms_scale_v10/fleet128/ippo_training/episodes900_epochs12_dropout00_lr0p0003_seed11/best_validation_checkpoint.pt",
+        "sha256": "95addd98cd2b2f58a2ed8e65004f970db06b229910f35bd5f389d6648946e995",
+        "trial": {
+          "best_episode": 900,
+          "best_validation_score": 0.18229272424666665,
+          "dropout": 0.0,
+          "episodes": 900,
+          "learning_rate": 0.0003,
+          "path": "results/noms_scale_v10/fleet128/ippo_training/episodes900_epochs12_dropout00_lr0p0003_seed11",
+          "ppo_epochs": 12,
+          "train_seed": 11,
+          "trial": "episodes900_epochs12_dropout00_lr0p0003_seed11"
+        }
+      },
+      {
+        "training_seed": 23,
+        "checkpoint": "results/noms_scale_v10/fleet128/ippo_training/episodes900_epochs12_dropout00_lr0p0003_seed23/best_validation_checkpoint.pt",
+        "sha256": "b9e94acfb7555675f2cc075b41b3f6acf30a4d03096262fd771035bf7abbdc3b",
+        "trial": {
+          "best_episode": 650,
+          "best_validation_score": 0.2500013122122222,
+          "dropout": 0.0,
+          "episodes": 900,
+          "learning_rate": 0.0003,
+          "path": "results/noms_scale_v10/fleet128/ippo_training/episodes900_epochs12_dropout00_lr0p0003_seed23",
+          "ppo_epochs": 12,
+          "train_seed": 23,
+          "trial": "episodes900_epochs12_dropout00_lr0p0003_seed23"
+        }
+      },
+      {
+        "training_seed": 37,
+        "checkpoint": "results/noms_scale_v10/fleet128/ippo_training/episodes900_epochs12_dropout00_lr0p0003_seed37/best_validation_checkpoint.pt",
+        "sha256": "d3a9b115362e3c3c46981117e65a221c956f7b42adf627387c1ab47185241803",
+        "trial": {
+          "best_episode": 900,
+          "best_validation_score": 0.21484518923444446,
+          "dropout": 0.0,
+          "episodes": 900,
+          "learning_rate": 0.0003,
+          "path": "results/noms_scale_v10/fleet128/ippo_training/episodes900_epochs12_dropout00_lr0p0003_seed37",
+          "ppo_epochs": 12,
+          "train_seed": 37,
+          "trial": "episodes900_epochs12_dropout00_lr0p0003_seed37"
+        }
+      }
+    ],
+    "qmix": [
+      {
+        "training_seed": 11,
+        "checkpoint": "results/noms_scale_v10/fleet128/qmix_training/episodes900_epochs12_dropout00_lr5em05_seed11/best_validation_checkpoint.pt",
+        "sha256": "6a70d87e4d03f73c5dc1039511b7377dcf445648742b939463cdcfb986549cb9",
+        "trial": {
+          "best_episode": 650,
+          "best_validation_score": 0.16406285214333335,
+          "dropout": 0.0,
+          "episodes": 900,
+          "learning_rate": 5e-05,
+          "path": "results/noms_scale_v10/fleet128/qmix_training/episodes900_epochs12_dropout00_lr5em05_seed11",
+          "ppo_epochs": 12,
+          "train_seed": 11,
+          "trial": "episodes900_epochs12_dropout00_lr5em05_seed11"
+        }
+      },
+      {
+        "training_seed": 23,
+        "checkpoint": "results/noms_scale_v10/fleet128/qmix_training/episodes900_epochs12_dropout00_lr5em05_seed23/best_validation_checkpoint.pt",
+        "sha256": "91a209d3365ff5877d90464493cffa32d2cec8506630fee4ac55ea804fabc511",
+        "trial": {
+          "best_episode": 100,
+          "best_validation_score": 0.23047007002222222,
+          "dropout": 0.0,
+          "episodes": 900,
+          "learning_rate": 5e-05,
+          "path": "results/noms_scale_v10/fleet128/qmix_training/episodes900_epochs12_dropout00_lr5em05_seed23",
+          "ppo_epochs": 12,
+          "train_seed": 23,
+          "trial": "episodes900_epochs12_dropout00_lr5em05_seed23"
+        }
+      },
+      {
+        "training_seed": 37,
+        "checkpoint": "results/noms_scale_v10/fleet128/qmix_training/episodes900_epochs12_dropout00_lr5em05_seed37/best_validation_checkpoint.pt",
+        "sha256": "b73b8380056b2065e4d141737fcb0695788b0238c8d690b1fb64f6070ba0db18",
+        "trial": {
+          "best_episode": 900,
+          "best_validation_score": 0.08854275028888889,
+          "dropout": 0.0,
+          "episodes": 900,
+          "learning_rate": 5e-05,
+          "path": "results/noms_scale_v10/fleet128/qmix_training/episodes900_epochs12_dropout00_lr5em05_seed37",
+          "ppo_epochs": 12,
+          "train_seed": 37,
+          "trial": "episodes900_epochs12_dropout00_lr5em05_seed37"
+        }
+      }
+    ]
+  },
+  "horizons_s": [
+    3,
+    5,
+    10,
+    20,
+    30
+  ],
+  "pilot": false,
+  "arrivals": "repeat the original seed-specific three-second workload with continuous queues",
+  "outages": "repeat original three-second outage windows",
+  "time_features": "three-second phase and original deadline/age scales",
+  "sla_denominator": "tasks with deadlines due by mission end"
+}

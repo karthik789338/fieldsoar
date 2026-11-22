@@ -1,0 +1,140 @@
+{
+  "scope": "H1_H2_HELDOUT_UNCALIBRATED_NETWORK_SENSITIVITY",
+  "external_evaluation_plan_sha256": null,
+  "model_selection": "training/validation only; all selected training seeds evaluated",
+  "summary": {
+    "critical_sla": 0.30911448888888887,
+    "overall_sla": 0.1375,
+    "standard_sla": 0.010850666666666666,
+    "batch_sla": 0.09253466666666667,
+    "fairness": 0.49545002222222223,
+    "selection_score": 0.24904941777777778
+  },
+  "sample_size": 45,
+  "selected_model": {
+    "base_config_sha256": "b82ff61109615687b6f08b324088ff615e701286598e2cc88cbf41a7e872c114",
+    "checkpoint_path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed37/best_validation_checkpoint.pt",
+    "chosen_config": {
+      "dropout": 0.0,
+      "episodes": 10000,
+      "learning_rate": 0.00011043890911284906,
+      "mean_validation_score": 0.21267477642740742,
+      "ppo_epochs": 12,
+      "trial_count": 3
+    },
+    "chosen_training_trial": {
+      "best_episode": 150,
+      "best_validation_score": 0.3281271556722222,
+      "dropout": 0.0,
+      "episodes": 10000,
+      "learning_rate": 0.00011043890911284906,
+      "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed37",
+      "ppo_epochs": 12,
+      "train_seed": 37,
+      "trial": "episodes10000_epochs12_dropout00_lr0p00011043891_seed37"
+    },
+    "environment_sha256": "0a8ac5415374654c181fe0ec7cfee23b1b013d1a165619371df1216b413840f3",
+    "grid_tested": [
+      {
+        "critic_arch": "pooled",
+        "dropout": 0.0,
+        "episodes": 10000,
+        "hidden_size": 128,
+        "learning_rate": 0.00011043890911284906,
+        "ppo_epochs": 12,
+        "variant": "qmix"
+      }
+    ],
+    "heldout_evaluated": false,
+    "heldout_evaluates_all_selected_training_seeds": true,
+    "limitations": [
+      "UAV local timings are assumed slowdowns of measured server CPU",
+      "Link capacities are analytical and uncalibrated",
+      "Cloud latency/energy not measured",
+      "Only 4 UAVs and 3s network trajectory currently available"
+    ],
+    "policy_variant": "qmix",
+    "runner_sha256": "0283f1c5b83e9c58211a5ea9ab54f6ec87ab4d9a39dfc00a1333a5d4103ea777",
+    "selected_training_trials": [
+      {
+        "best_episode": 300,
+        "best_validation_score": 0.15755268373777778,
+        "dropout": 0.0,
+        "episodes": 10000,
+        "learning_rate": 0.00011043890911284906,
+        "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed11",
+        "ppo_epochs": 12,
+        "train_seed": 11,
+        "trial": "episodes10000_epochs12_dropout00_lr0p00011043891_seed11"
+      },
+      {
+        "best_episode": 300,
+        "best_validation_score": 0.15234448987222224,
+        "dropout": 0.0,
+        "episodes": 10000,
+        "learning_rate": 0.00011043890911284906,
+        "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed23",
+        "ppo_epochs": 12,
+        "train_seed": 23,
+        "trial": "episodes10000_epochs12_dropout00_lr0p00011043891_seed23"
+      },
+      {
+        "best_episode": 150,
+        "best_validation_score": 0.3281271556722222,
+        "dropout": 0.0,
+        "episodes": 10000,
+        "learning_rate": 0.00011043890911284906,
+        "path": "results/noms_baselines_all_fleets_ep10000/20261120T051535Z/fleet128/qmix/training/episodes10000_epochs12_dropout00_lr0p00011043891_seed37",
+        "ppo_epochs": 12,
+        "train_seed": 37,
+        "trial": "episodes10000_epochs12_dropout00_lr0p00011043891_seed37"
+      }
+    ],
+    "selection_based_on": "validation_only",
+    "tuning_config_sha256": "e8afc71b6b0395632b42046440c8b7cb36d3ae44d735b15a2c49c527f1514f4f"
+  },
+  "training_seed_count": 3,
+  "per_training_seed": [
+    {
+      "training_seed": 11,
+      "critical_sla": 0.20781233333333335,
+      "overall_sla": 0.10546866666666667,
+      "standard_sla": 0.026302066666666665,
+      "batch_sla": 0.08229166666666667,
+      "fairness": 0.34974526666666667,
+      "selection_score": 0.17199205,
+      "evaluation_episodes": 15
+    },
+    {
+      "training_seed": 23,
+      "critical_sla": 0.2265624,
+      "overall_sla": 0.07916666666666666,
+      "standard_sla": 0.0,
+      "batch_sla": 0.010937466666666666,
+      "fairness": 0.44714786666666667,
+      "selection_score": 0.17497389333333335,
+      "evaluation_episodes": 15
+    },
+    {
+      "training_seed": 37,
+      "critical_sla": 0.49296873333333335,
+      "overall_sla": 0.22786466666666666,
+      "standard_sla": 0.006249933333333333,
+      "batch_sla": 0.18437486666666666,
+      "fairness": 0.6894569333333334,
+      "selection_score": 0.40018231,
+      "evaluation_episodes": 15
+    }
+  ],
+  "policy_variant": "qmix",
+  "compared_policies": [
+    "qmix",
+    "local_only",
+    "edge_only",
+    "cloud_only",
+    "edf",
+    "network_aware_edf",
+    "critical_first"
+  ],
+  "no_physical_sla_guarantee": true
+}

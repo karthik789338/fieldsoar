@@ -1,0 +1,53 @@
+schema_version: 1
+research: FieldVision-NOMS
+note: >
+  Source inventory, not a guarantee that data are downloaded or that a trained
+  workload model exists. Verify dataset-specific licensing before redistribution.
+datasets:
+  - id: CWD30
+    source_url: https://github.com/Mr-TalhaIlyas/CWD30
+    role: crop_and_weed_classification
+    acquisition: terrestrial_or_mixed_agricultural_images
+    expected_format: large_zip_or_extracted_tree
+    license: verify_at_source
+    currently_expected: previously_downloaded_archive
+  - id: RumexWeeds
+    source_url: https://github.com/DTU-PAS/RumexWeeds
+    role: weed_object_detection
+    acquisition: ground_robot_RGB_and_navigation_sensors
+    expected_format: extracted_tree
+    license: verify_at_source
+    currently_expected: previously_downloaded
+  - id: LeafySpurge
+    source_url: https://github.com/leafy-spurge-dataset/leafy-spurge-dataset
+    role: invasive_weed_classification
+    acquisition: UAV_orthomosaic_derived_images
+    expected_format: extracted_tree
+    license: CC-BY-4.0_data_per_scientific_data_publication
+    currently_expected: previously_downloaded
+  - id: PhenoBench
+    source_url: https://www.phenobench.org/dataset.html
+    role: crop_weed_segmentation_and_detection
+    acquisition: agricultural_images
+    expected_format: PhenoBench-v110.zip_or_extracted
+    license: CC-BY-SA-4.0
+    source_archive_md5: 5168bba762053725890478432cdbdb1d
+  - id: IrishGrassClover
+    source_url: https://zenodo.org/records/14191859
+    role: biomass_regression
+    acquisition: UAV_drone_images_subset
+    expected_format: drone.zip_or_extracted
+    license: CC-BY-NC-SA-4.0
+    source_drone_archive_md5: 72fb2ff0ff8c18383bb7b227ae8637a1
+  - id: WeedMap
+    source_url: https://github.com/viariasv/weedMap
+    role: multispectral_segmentation_and_vegetation_indices
+    acquisition: multispectral_UAV_images
+    expected_format: verify_data_distribution
+    license: verify_dataset_license_separately_from_code
+  - id: OpenDroneMap
+    source_url: https://github.com/OpenDroneMap/ODMdata
+    role: photogrammetry_and_mosaicking
+    acquisition: multiple_sample_UAV_image_collections
+    expected_format: selected_sample_dataset
+    license: verify_selected_sample_license

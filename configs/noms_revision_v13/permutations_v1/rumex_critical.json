@@ -1,0 +1,12 @@
+{
+  "dataset_to_class": {
+    "CWD30": "standard",
+    "LeafySpurge": "batch",
+    "RumexWeeds": "critical"
+  },
+  "deadline_policy": "preserve_absolute",
+  "generated_utc": "2026-11-03T03:27:29.291738+00:00",
+  "name": "rumex_critical",
+  "note": "Controlled relabeling of the same job inputs. Original map is a candidate assumption; verify against existing job records.",
+  "schema_version": 1
+}

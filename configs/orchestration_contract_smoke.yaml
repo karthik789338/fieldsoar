@@ -1,0 +1,28 @@
+# Phase 3A is a simulator contract/smoke test. These are NOT measured values.
+schema_version: 1
+workload_profile_source: synthetic_smoke_only
+seed: 11
+n_uavs: 4
+tick_s: 1.0
+duration_s: 40
+network:
+  bottleneck_mbps: 24.0
+  # Piecewise constant capacity schedule; synthetic. Zero at 8s = outage.
+  capacity_schedule_mbps:
+    0: 24.0
+    6: 8.0
+    8: 0.0
+    10: 16.0
+    16: 24.0
+resources:
+  edge_slots: 2
+  cloud_slots: 3
+jobs:
+  - {job_id: rumex_detection_001, uav_id: 0, dataset: RumexWeeds, workload: weed_detection, arrival_s: 0, deadline_s: 13, input_mb: 5.0, local_runtime_s: 8, edge_runtime_s: 2, cloud_runtime_s: 1, service_class: critical}
+  - {job_id: cwd30_classification_001, uav_id: 1, dataset: CWD30, workload: crop_weed_classification, arrival_s: 0, deadline_s: 13, input_mb: 3.0, local_runtime_s: 4, edge_runtime_s: 2, cloud_runtime_s: 1, service_class: critical}
+  - {job_id: leafyspurge_largeimage_001, uav_id: 2, dataset: LeafySpurge, workload: high_resolution_image_processing, arrival_s: 0, deadline_s: 32, input_mb: 10.0, local_runtime_s: 14, edge_runtime_s: 5, cloud_runtime_s: 2, service_class: batch}
+  - {job_id: rumex_detection_002, uav_id: 0, dataset: RumexWeeds, workload: weed_detection, arrival_s: 2, deadline_s: 17, input_mb: 5.0, local_runtime_s: 7, edge_runtime_s: 2, cloud_runtime_s: 1, service_class: standard}
+  - {job_id: leafyspurge_classification_001, uav_id: 3, dataset: LeafySpurge, workload: invasive_weed_classification, arrival_s: 2, deadline_s: 20, input_mb: 4.0, local_runtime_s: 6, edge_runtime_s: 2, cloud_runtime_s: 1, service_class: standard}
+  - {job_id: cwd30_classification_002, uav_id: 1, dataset: CWD30, workload: crop_weed_classification, arrival_s: 4, deadline_s: 15, input_mb: 2.0, local_runtime_s: 4, edge_runtime_s: 2, cloud_runtime_s: 1, service_class: critical}
+  - {job_id: rumex_batch_001, uav_id: 2, dataset: RumexWeeds, workload: image_batch_processing, arrival_s: 5, deadline_s: 39, input_mb: 12.0, local_runtime_s: 17, edge_runtime_s: 5, cloud_runtime_s: 3, service_class: batch}
+  - {job_id: leafyspurge_classification_002, uav_id: 3, dataset: LeafySpurge, workload: invasive_weed_classification, arrival_s: 7, deadline_s: 24, input_mb: 4.0, local_runtime_s: 7, edge_runtime_s: 2, cloud_runtime_s: 1, service_class: standard}

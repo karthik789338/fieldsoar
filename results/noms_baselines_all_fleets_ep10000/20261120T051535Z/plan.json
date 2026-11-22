@@ -1,0 +1,248 @@
+{
+  "runner_sha256": "0283f1c5b83e9c58211a5ea9ab54f6ec87ab4d9a39dfc00a1333a5d4103ea777",
+  "environment_sha256": "0a8ac5415374654c181fe0ec7cfee23b1b013d1a165619371df1216b413840f3",
+  "h3_sha256": "01715bc3863baee62ad7f868426dffd526dcafc752f8563b9ceeb4ac8f869889",
+  "episodes_per_training_seed": 10000,
+  "cases": {
+    "fleet4/ippo": {
+      "config": "results/noms_fleet_scaling_baselines_v1/fleet_configs/fleet_4uav_base.yaml",
+      "config_sha256": "cdff20782472b3ad71b3faf4423f38e85f469b1e6b1734237774acab17613d98",
+      "tuning_sha256": "8a359da5f9d19d7d5700c7bc6f010597e9ebd4d95c0d52a5258c2afdef363bdf",
+      "source_selection": "results/noms_learning_baselines_v9/fleet4/ippo_training/selected_model.json",
+      "source_tuning": "configs/learning_baselines_v9.yaml",
+      "source_selection_sha256": "e609e5efd7b89c5044d07645ff747fb1c5484dcafaf1f1bc530681697fae5fcc",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_h123_lr3_v8/fleet4/full_nominal_evaluation",
+          "summary_sha256": "92e9bb87a38d910982f0541e94c4ecb6a7ea9c6fbbd3a895b1ec7f259355e498",
+          "rows_sha256": "cf5d78a4d32b50bc5fd832dcfc23e2d5442a5eb16e1a2a7d2b5d1ddb9096bf25"
+        },
+        "independent": {
+          "directory": "results/noms_h123_lr3_v8/fleet4/full_independent_evaluation",
+          "summary_sha256": "922f9dbc3adc717c0eaa073c9ab1de3d6d0ca10d1aa02f90fa85ee6f55e6e7d7",
+          "rows_sha256": "e37d081af2274efef371176583972af3e0625f32311f37ec8b313c5316b25500"
+        }
+      }
+    },
+    "fleet4/qmix": {
+      "config": "results/noms_fleet_scaling_baselines_v1/fleet_configs/fleet_4uav_base.yaml",
+      "config_sha256": "cdff20782472b3ad71b3faf4423f38e85f469b1e6b1734237774acab17613d98",
+      "tuning_sha256": "8a359da5f9d19d7d5700c7bc6f010597e9ebd4d95c0d52a5258c2afdef363bdf",
+      "source_selection": "results/noms_learning_baselines_v9/fleet4/qmix_training/selected_model.json",
+      "source_tuning": "configs/learning_baselines_v9.yaml",
+      "source_selection_sha256": "40f2e2072d2aedae55976ea4d2ea87c108a07c91f8fef601cc4c7b57da92698c",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_h123_lr3_v8/fleet4/full_nominal_evaluation",
+          "summary_sha256": "92e9bb87a38d910982f0541e94c4ecb6a7ea9c6fbbd3a895b1ec7f259355e498",
+          "rows_sha256": "cf5d78a4d32b50bc5fd832dcfc23e2d5442a5eb16e1a2a7d2b5d1ddb9096bf25"
+        },
+        "independent": {
+          "directory": "results/noms_h123_lr3_v8/fleet4/full_independent_evaluation",
+          "summary_sha256": "922f9dbc3adc717c0eaa073c9ab1de3d6d0ca10d1aa02f90fa85ee6f55e6e7d7",
+          "rows_sha256": "e37d081af2274efef371176583972af3e0625f32311f37ec8b313c5316b25500"
+        }
+      }
+    },
+    "fleet8/ippo": {
+      "config": "results/noms_fleet_scaling_baselines_v1/fleet_configs/fleet_8uav_base.yaml",
+      "config_sha256": "5363719aa2d7f1bc7cbebd6103647f91a52577133e861c92464ab2826798864f",
+      "tuning_sha256": "8a359da5f9d19d7d5700c7bc6f010597e9ebd4d95c0d52a5258c2afdef363bdf",
+      "source_selection": "results/noms_learning_baselines_v9/fleet8/ippo_training/selected_model.json",
+      "source_tuning": "configs/learning_baselines_v9.yaml",
+      "source_selection_sha256": "74c091481ae3d7f8b57b4026228746d198263add5c846126033ebb103d041fea",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_h123_lr3_v8/fleet8/full_nominal_evaluation",
+          "summary_sha256": "b9e6af06cc8be1225a716385c3af3abe32f8aeab8f5070fcdea5e60d4d96da63",
+          "rows_sha256": "367b1d1639f3bd0a75d6005830c938bd0485eebd9326c663341e81f79f10cd0d"
+        },
+        "independent": {
+          "directory": "results/noms_h123_lr3_v8/fleet8/full_independent_evaluation",
+          "summary_sha256": "04afc0621e86cf5be464456c3a22f57797be7e53a1a33fa222ec405bc0a52a4b",
+          "rows_sha256": "f9a9ed8be88166d7b37a8feaa464eda6a03e99846a07adfd34d169f0d1bb68c2"
+        }
+      }
+    },
+    "fleet8/qmix": {
+      "config": "results/noms_fleet_scaling_baselines_v1/fleet_configs/fleet_8uav_base.yaml",
+      "config_sha256": "5363719aa2d7f1bc7cbebd6103647f91a52577133e861c92464ab2826798864f",
+      "tuning_sha256": "8a359da5f9d19d7d5700c7bc6f010597e9ebd4d95c0d52a5258c2afdef363bdf",
+      "source_selection": "results/noms_learning_baselines_v9/fleet8/qmix_training/selected_model.json",
+      "source_tuning": "configs/learning_baselines_v9.yaml",
+      "source_selection_sha256": "9b4724e2755b304dd50999545fd67e2c7cfe6b7d39bd7e2cc6e2303673ca7666",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_h123_lr3_v8/fleet8/full_nominal_evaluation",
+          "summary_sha256": "b9e6af06cc8be1225a716385c3af3abe32f8aeab8f5070fcdea5e60d4d96da63",
+          "rows_sha256": "367b1d1639f3bd0a75d6005830c938bd0485eebd9326c663341e81f79f10cd0d"
+        },
+        "independent": {
+          "directory": "results/noms_h123_lr3_v8/fleet8/full_independent_evaluation",
+          "summary_sha256": "04afc0621e86cf5be464456c3a22f57797be7e53a1a33fa222ec405bc0a52a4b",
+          "rows_sha256": "f9a9ed8be88166d7b37a8feaa464eda6a03e99846a07adfd34d169f0d1bb68c2"
+        }
+      }
+    },
+    "fleet16/ippo": {
+      "config": "results/noms_fleet_scaling_baselines_v1/fleet_configs/fleet_16uav_base.yaml",
+      "config_sha256": "8bf374f17493950a0c5147568b448b596121e7d4e2fd9c721ac2331f03b66401",
+      "tuning_sha256": "8a359da5f9d19d7d5700c7bc6f010597e9ebd4d95c0d52a5258c2afdef363bdf",
+      "source_selection": "results/noms_learning_baselines_v9/fleet16/ippo_training/selected_model.json",
+      "source_tuning": "configs/learning_baselines_v9.yaml",
+      "source_selection_sha256": "b7f6d183b2cde12d5adfe9959b31b5bf4483616fe3f1746dd791f9d484305189",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_h123_lr3_v8/fleet16/full_nominal_evaluation",
+          "summary_sha256": "8726a98d1833908ad02a2939633dea2da8460ea5870f67630c47125bc94429ce",
+          "rows_sha256": "2315c4c2952e3fc570cb0d8f21bed61a52d5c8b76874e5a57484b7ac37215d89"
+        },
+        "independent": {
+          "directory": "results/noms_h123_lr3_v8/fleet16/full_independent_evaluation",
+          "summary_sha256": "b25be9c40525faa1b26aa624e10bd3dc41a4ed03a6f07b969c5969d0af624b50",
+          "rows_sha256": "ab9127dfc8c57ba3c4f86ff83f6732861c4e2b049b6c3fd0b0be4764b254ec48"
+        }
+      }
+    },
+    "fleet16/qmix": {
+      "config": "results/noms_fleet_scaling_baselines_v1/fleet_configs/fleet_16uav_base.yaml",
+      "config_sha256": "8bf374f17493950a0c5147568b448b596121e7d4e2fd9c721ac2331f03b66401",
+      "tuning_sha256": "d8ec3e71851b0c60b17576f90c13a26e46a75c63d6cb7fa82fd03e983f682ec1",
+      "source_selection": "results/noms_learning_baselines_v9/fleet16/qmix_training/selected_model.json",
+      "source_tuning": "configs/learning_baselines_v9.yaml",
+      "source_selection_sha256": "696136726f45c896fb40fd1813a26d6e9c526e678262a7398d6fa185eb17703c",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_h123_lr3_v8/fleet16/full_nominal_evaluation",
+          "summary_sha256": "8726a98d1833908ad02a2939633dea2da8460ea5870f67630c47125bc94429ce",
+          "rows_sha256": "2315c4c2952e3fc570cb0d8f21bed61a52d5c8b76874e5a57484b7ac37215d89"
+        },
+        "independent": {
+          "directory": "results/noms_h123_lr3_v8/fleet16/full_independent_evaluation",
+          "summary_sha256": "b25be9c40525faa1b26aa624e10bd3dc41a4ed03a6f07b969c5969d0af624b50",
+          "rows_sha256": "ab9127dfc8c57ba3c4f86ff83f6732861c4e2b049b6c3fd0b0be4764b254ec48"
+        }
+      }
+    },
+    "fleet32/ippo": {
+      "config": "results/noms_fleet_scaling_baselines_v1/fleet_configs/fleet_32uav_base.yaml",
+      "config_sha256": "5d2714ad42391506a7cd6f4ad36f8f4cb1ec260f5ff1568d838f3608c181599f",
+      "tuning_sha256": "8a359da5f9d19d7d5700c7bc6f010597e9ebd4d95c0d52a5258c2afdef363bdf",
+      "source_selection": "results/noms_learning_baselines_v9/fleet32/ippo_training/selected_model.json",
+      "source_tuning": "configs/learning_baselines_v9.yaml",
+      "source_selection_sha256": "b9aaf6e0409848e4fcfcc22a98e13113042e7fb34ddc105fd17b12cea7047dcb",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_h123_lr3_v8/fleet32/full_nominal_evaluation",
+          "summary_sha256": "757ece1fbae979e333f0234fe5a9c906b9a0bc14ec3eefd409a1083aba645eef",
+          "rows_sha256": "2fdc5f6ac4d06714b390c2b6be15ca3905afc8ba4c6ef24d1762471f76c8bfee"
+        },
+        "independent": {
+          "directory": "results/noms_h123_lr3_v8/fleet32/full_independent_evaluation",
+          "summary_sha256": "fe2ee022180e7378edbb741ac0cad46045eb4a707c6db55b12e5935fb0b1e10d",
+          "rows_sha256": "4ebab2adb4823db81f1279fb24b98bd4c818acb2e4efde7a1dbeb1a44145de8f"
+        }
+      }
+    },
+    "fleet32/qmix": {
+      "config": "results/noms_fleet_scaling_baselines_v1/fleet_configs/fleet_32uav_base.yaml",
+      "config_sha256": "5d2714ad42391506a7cd6f4ad36f8f4cb1ec260f5ff1568d838f3608c181599f",
+      "tuning_sha256": "8a359da5f9d19d7d5700c7bc6f010597e9ebd4d95c0d52a5258c2afdef363bdf",
+      "source_selection": "results/noms_learning_baselines_v9/fleet32/qmix_training/selected_model.json",
+      "source_tuning": "configs/learning_baselines_v9.yaml",
+      "source_selection_sha256": "9f3facce7f651863fe8e805880d678ba72fd078be0848a21a70d52543f30c427",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_h123_lr3_v8/fleet32/full_nominal_evaluation",
+          "summary_sha256": "757ece1fbae979e333f0234fe5a9c906b9a0bc14ec3eefd409a1083aba645eef",
+          "rows_sha256": "2fdc5f6ac4d06714b390c2b6be15ca3905afc8ba4c6ef24d1762471f76c8bfee"
+        },
+        "independent": {
+          "directory": "results/noms_h123_lr3_v8/fleet32/full_independent_evaluation",
+          "summary_sha256": "fe2ee022180e7378edbb741ac0cad46045eb4a707c6db55b12e5935fb0b1e10d",
+          "rows_sha256": "4ebab2adb4823db81f1279fb24b98bd4c818acb2e4efde7a1dbeb1a44145de8f"
+        }
+      }
+    },
+    "fleet64/ippo": {
+      "config": "configs/noms_fleet_expansion_v4/fleet_64uav_base.yaml",
+      "config_sha256": "f84eac9a6a31a2ce37b24588b8aa98db3bee5f5fb7a0aa49aaa1d5ae11abc19f",
+      "tuning_sha256": "8a359da5f9d19d7d5700c7bc6f010597e9ebd4d95c0d52a5258c2afdef363bdf",
+      "source_selection": "results/noms_learning_baselines_v9/fleet64/ippo_training/selected_model.json",
+      "source_tuning": "configs/learning_baselines_v9.yaml",
+      "source_selection_sha256": "7657f660f30e1b6768607e9ef559b4c06fd8987cfccd863ca9e153a19c783cc1",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_h123_lr3_v8/fleet64/full_nominal_evaluation",
+          "summary_sha256": "38e2a0d99be5f5761fa20191eef6c2c7720753b8a8c48af330d72227b0f63f53",
+          "rows_sha256": "3f86b86c47a646018fae5e1d442967d1400fc5f7f9590ac6f1328b40ee2d1e75"
+        },
+        "independent": {
+          "directory": "results/noms_h123_lr3_v8/fleet64/full_independent_evaluation",
+          "summary_sha256": "1e4974f49bc3ffbe15b5a7ea1fe61e874d0880b03c322a946983593ffbc2d2f1",
+          "rows_sha256": "3b2b2e19ba731d5c3c956d87cbe780e50c5b037fd1e45d70537ee7f2f31b33ea"
+        }
+      }
+    },
+    "fleet64/qmix": {
+      "config": "configs/noms_fleet_expansion_v4/fleet_64uav_base.yaml",
+      "config_sha256": "f84eac9a6a31a2ce37b24588b8aa98db3bee5f5fb7a0aa49aaa1d5ae11abc19f",
+      "tuning_sha256": "d8ec3e71851b0c60b17576f90c13a26e46a75c63d6cb7fa82fd03e983f682ec1",
+      "source_selection": "results/noms_learning_baselines_v9/fleet64/qmix_training/selected_model.json",
+      "source_tuning": "configs/learning_baselines_v9.yaml",
+      "source_selection_sha256": "c259bf126ea35bb9958fd9d83d4279e08cc048cbc490abcb8d33a421b832bb3a",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_h123_lr3_v8/fleet64/full_nominal_evaluation",
+          "summary_sha256": "38e2a0d99be5f5761fa20191eef6c2c7720753b8a8c48af330d72227b0f63f53",
+          "rows_sha256": "3f86b86c47a646018fae5e1d442967d1400fc5f7f9590ac6f1328b40ee2d1e75"
+        },
+        "independent": {
+          "directory": "results/noms_h123_lr3_v8/fleet64/full_independent_evaluation",
+          "summary_sha256": "1e4974f49bc3ffbe15b5a7ea1fe61e874d0880b03c322a946983593ffbc2d2f1",
+          "rows_sha256": "3b2b2e19ba731d5c3c956d87cbe780e50c5b037fd1e45d70537ee7f2f31b33ea"
+        }
+      }
+    },
+    "fleet128/ippo": {
+      "config": "configs/noms_scale_v10/fleet_128uav_base.yaml",
+      "config_sha256": "b82ff61109615687b6f08b324088ff615e701286598e2cc88cbf41a7e872c114",
+      "tuning_sha256": "90373917ee69be9d0af924ae5b7eb4d9a186ef3c9d284bcfaee545c9a84a0cc6",
+      "source_selection": "results/noms_optuna_128_ep3000/20261120T005059Z/ippo/training/selected_model.json",
+      "source_tuning": "results/noms_optuna_128_ep3000/20261120T005059Z/ippo/tuning_ep3000.yaml",
+      "source_selection_sha256": "7ea60e81645b2ffd4c6cf814de35b8d62422a49424ad6255d12bdf86309cb062",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_scale_v10/fleet128/full_nominal_evaluation",
+          "summary_sha256": "f735f4fdc1830b92ddedaae357d8d4f74a9c73c6b6363ec5718d777f4f66dccc",
+          "rows_sha256": "62211dd6bfd6ae1d79c0e069e379f26d54e970eda112094a4cbc321d62f333e5"
+        },
+        "independent": {
+          "directory": "results/noms_scale_v10/fleet128/full_independent_evaluation",
+          "summary_sha256": "7565ab6ea0a8c7306a2bb45b8dc6db418534b6436d8e9c86de3df3cf2c3169ae",
+          "rows_sha256": "54832efcb17a09bcd91dbb1dfadb11e8930e96ac6966e4cdbb7f8dfc702a70cc"
+        }
+      }
+    },
+    "fleet128/qmix": {
+      "config": "configs/noms_scale_v10/fleet_128uav_base.yaml",
+      "config_sha256": "b82ff61109615687b6f08b324088ff615e701286598e2cc88cbf41a7e872c114",
+      "tuning_sha256": "e8afc71b6b0395632b42046440c8b7cb36d3ae44d735b15a2c49c527f1514f4f",
+      "source_selection": "results/noms_optuna_128_ep3000/20261120T005059Z/qmix/training/selected_model.json",
+      "source_tuning": "results/noms_optuna_128_ep3000/20261120T005059Z/qmix/tuning_ep3000.yaml",
+      "source_selection_sha256": "ab7a7f80d6c8e6c986a7cfa9cc83a9d6830e06ebda7b01c55efcc7394048c69d",
+      "reference": {
+        "nominal": {
+          "directory": "results/noms_scale_v10/fleet128/full_nominal_evaluation",
+          "summary_sha256": "f735f4fdc1830b92ddedaae357d8d4f74a9c73c6b6363ec5718d777f4f66dccc",
+          "rows_sha256": "62211dd6bfd6ae1d79c0e069e379f26d54e970eda112094a4cbc321d62f333e5"
+        },
+        "independent": {
+          "directory": "results/noms_scale_v10/fleet128/full_independent_evaluation",
+          "summary_sha256": "7565ab6ea0a8c7306a2bb45b8dc6db418534b6436d8e9c86de3df3cf2c3169ae",
+          "rows_sha256": "54832efcb17a09bcd91dbb1dfadb11e8930e96ac6966e4cdbb7f8dfc702a70cc"
+        }
+      }
+    }
+  }
+}
